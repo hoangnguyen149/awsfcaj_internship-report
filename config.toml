@@ -1,0 +1,60 @@
+baseURL = "/"
+relativeURLs = true
+canonifyURLs = false
+defaultContentLanguage = "vi"
+
+# Theme sử dụng hugo-theme-learn
+theme = "hugo-theme-learn"
+
+# Tính năng search
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[params]
+  themeVariant = "workshop"
+  editURL = ""
+  description = "FCJ Workshop Template"
+  author = "your-email@example.com"
+  showVisitedLinks = true
+  disableBreadcrumb = false
+  disableNextPrev = false
+
+[Languages]
+  [Languages.vi]
+    title = "Chương trình AWS First Cloud Journey"
+    weight = 1
+    languageName = "Tiếng Việt"
+
+    [[Languages.vi.menu.shortcuts]]
+      name = "<i class='fab fa-aws'></i> AWS Study Group"
+      identifier = "AWS Study Group"
+      url = "https://awsstudygroup.com"
+      weight = 10
+
+    [[Languages.vi.menu.shortcuts]]
+      name = "<i class='fab fa-facebook'></i> Nhóm FB"
+      identifier = "AWS Study Group FB"
+      url = "https://www.facebook.com/groups/awsstudygroupfcj"
+      weight = 20
+
+  [Languages.en]
+    title = "AWS First Cloud Journey Program"
+    weight = 2
+    languageName = "English"
+
+    [[Languages.en.menu.shortcuts]]
+      name = "<i class='fab fa-aws'></i> AWS Study Group"
+      identifier = "AWS Study Group"
+      url = "https://awsstudygroup.com"
+      weight = 10
+
+    [[Languages.en.menu.shortcuts]]
+      name = "<i class='fab fa-facebook'></i> FB Group"
+      identifier = "AWS Study Group FB"
+      url = "https://www.facebook.com/groups/awsstudygroupfcj"
+      weight = 20
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
