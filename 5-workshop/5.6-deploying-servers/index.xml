@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Deploy Backend on Internship Report</title><link>https://workshop-sample.fcjuni.com/5-workshop/5.6-deploying-servers/</link><description>Recent content in Deploy Backend on Internship Report</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://workshop-sample.fcjuni.com/5-workshop/5.6-deploying-servers/index.xml" rel="self" type="application/rss+xml"/><item><title>Clean up</title><link>https://workshop-sample.fcjuni.com/5-workshop/5.6-deploying-servers/_index_test/</link><pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate><guid>https://workshop-sample.fcjuni.com/5-workshop/5.6-deploying-servers/_index_test/</guid><description>&lt;p>Congratulations on completing this workshop!
+In this workshop, you learned architecture patterns for accessing Amazon S3 without using the Public Internet.&lt;/p>
+&lt;ul>
+&lt;li>By creating a gateway endpoint, you enabled direct communication between EC2 resources and Amazon S3, without traversing an Internet Gateway.&lt;/li>
+&lt;li>By creating an interface endpoint you extended S3 connectivity to resources running in your on-premises data center via AWS Site-to-Site VPN or Direct Connect.&lt;/li>
+&lt;/ul>
+&lt;h4 id="clean-up">clean up&lt;/h4>
+&lt;ol>
+&lt;li>Navigate to Hosted Zones on the left side of Route 53 console. Click the name of &lt;em>s3.us-east-1.amazonaws.com&lt;/em> zone. Click Delete and confirm deletion by typing delete.&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img alt="hosted zone" src="https://workshop-sample.fcjuni.com/images/5-Workshop/5.6-Cleanup/delete-zone.png">&lt;/p></description></item></channel></rss>

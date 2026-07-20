@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Workshop Overview on Internship Report</title><link>https://workshop-sample.fcjuni.com/5-workshop/5.1-workshop-overview/</link><description>Recent content in Workshop Overview on Internship Report</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://workshop-sample.fcjuni.com/5-workshop/5.1-workshop-overview/index.xml" rel="self" type="application/rss+xml"/><item><title>Introduction</title><link>https://workshop-sample.fcjuni.com/5-workshop/5.1-workshop-overview/_index_test/</link><pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate><guid>https://workshop-sample.fcjuni.com/5-workshop/5.1-workshop-overview/_index_test/</guid><description>&lt;h4 id="vpc-endpoints">VPC endpoints&lt;/h4>
+&lt;ul>
+&lt;li>&lt;strong>VPC endpoints&lt;/strong> are virtual devices. They are horizontally scaled, redundant, and highly available VPC components. They allow communication between your compute resources and AWS services without imposing availability risks.&lt;/li>
+&lt;li>Compute resources running in VPC can access &lt;strong>Amazon S3&lt;/strong> using a Gateway endpoint. PrivateLink interface endpoints can be used by compute resources running in VPC or on-premises.&lt;/li>
+&lt;/ul>
+&lt;h4 id="workshop-overview">Workshop overview&lt;/h4>
+&lt;p>In this workshop, you will use two VPCs.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>&amp;ldquo;VPC Cloud&amp;rdquo;&lt;/strong> is for cloud resources such as a &lt;strong>Gateway endpoint&lt;/strong> and an EC2 instance to test with.&lt;/li>
+&lt;li>&lt;strong>&amp;ldquo;VPC On-Prem&amp;rdquo;&lt;/strong> simulates an on-premises environment such as a factory or corporate datacenter. An EC2 instance running strongSwan VPN software has been deployed in &amp;ldquo;VPC On-prem&amp;rdquo; and automatically configured to establish a Site-to-Site VPN tunnel with AWS Transit Gateway. This VPN simulates connectivity from an on-premises location to the AWS cloud. To minimize costs, only one VPN instance is provisioned to support this workshop. When planning VPN connectivity for your production workloads, AWS recommends using multiple VPN devices for high availability.&lt;/li>
+&lt;/ul>
+&lt;h3 id="tasks-to-be-carried-out-this-week">Tasks to be carried out this week:&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Day&lt;/th>
+ &lt;th style="text-align: left">Task&lt;/th>
+ &lt;th style="text-align: left">Start Date&lt;/th>
+ &lt;th style="text-align: left">Completion Date&lt;/th>
+ &lt;th style="text-align: left">Reference Material&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">1&lt;/td>
+ &lt;td style="text-align: left">- &lt;strong>Global Edge Services:&lt;/strong> &lt;br>  + Configure Amazon Route 53 for DNS management &lt;br>  + Request SSL/TLS certificates with AWS Certificate Manager (ACM) &lt;br>  + Protect the application using AWS WAF &lt;br>  + Deliver static content through Amazon CloudFront&lt;/td>
+ &lt;td style="text-align: left">24/04/2026&lt;/td>
+ &lt;td style="text-align: left">24/04/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsstudygroup.com/">https://cloudjourney.awsstudygroup.com/&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">2&lt;/td>
+ &lt;td style="text-align: left">- &lt;strong>Frontend &amp;amp; Identity:&lt;/strong> &lt;br>  + Deploy React frontend to Amazon S3 Static Website Hosting &lt;br>  + Configure Amazon Cognito User Pool and Identity Pool &lt;br>  + Integrate Cognito authentication with the application&lt;/td>
+ &lt;td style="text-align: left">25/04/2026&lt;/td>
+ &lt;td style="text-align: left">25/04/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsstudygroup.com/">https://cloudjourney.awsstudygroup.com/&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">3&lt;/td>
+ &lt;td style="text-align: left">- &lt;strong>Networking &amp;amp; Load Balancing:&lt;/strong> &lt;br>  + Create VPC, Public and Private Subnets &lt;br>  + Configure Internet Gateway and NAT Gateway &lt;br>  + Set up VPC Peering &lt;br>  + Deploy Application Load Balancer (ALB)&lt;/td>
+ &lt;td style="text-align: left">26/04/2026&lt;/td>
+ &lt;td style="text-align: left">27/04/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsstudygroup.com/">https://cloudjourney.awsstudygroup.com/&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">4&lt;/td>
+ &lt;td style="text-align: left">- &lt;strong>Application &amp;amp; Serverless:&lt;/strong> &lt;br>  + Deploy Node.js/Express backend on Amazon EC2 &lt;br>  + Configure Auto Scaling Group across two Availability Zones &lt;br>  + Build Serverless APIs using AWS Lambda and Amazon API Gateway for Payments and Document Processing&lt;/td>
+ &lt;td style="text-align: left">28/04/2026&lt;/td>
+ &lt;td style="text-align: left">29/04/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsstudygroup.com/">https://cloudjourney.awsstudygroup.com/&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">5&lt;/td>
+ &lt;td style="text-align: left">- &lt;strong>Database &amp;amp; Storage:&lt;/strong> &lt;br>  + Deploy Amazon RDS MySQL Multi-AZ &lt;br>  + Configure Amazon ElastiCache for Redis &lt;br>  + Store documents in Amazon S3 &lt;br>  + Save audit logs using Amazon DynamoDB&lt;/td>
+ &lt;td style="text-align: left">30/04/2026&lt;/td>
+ &lt;td style="text-align: left">30/04/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsstudygroup.com/">https://cloudjourney.awsstudygroup.com/&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">6&lt;/td>
+ &lt;td style="text-align: left">- &lt;strong>Operations &amp;amp; DevOps:&lt;/strong> &lt;br>  + Store secrets with AWS Secrets Manager &lt;br>  + Monitor resources using Amazon CloudWatch &lt;br>  + Configure notifications with Amazon SNS &lt;br>  + Build CI/CD pipeline using GitHub, AWS CodePipeline, CodeBuild, and CodeDeploy &lt;br>  + Implement Blue/Green Deployment strategy&lt;/td>
+ &lt;td style="text-align: left">01/05/2026&lt;/td>
+ &lt;td style="text-align: left">02/05/2026&lt;/td>
+ &lt;td style="text-align: left">&lt;a href="https://cloudjourney.awsstudygroup.com/">https://cloudjourney.awsstudygroup.com/&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>&lt;img alt="overview" src="https://workshop-sample.fcjuni.com/images/5-Workshop/5.1-Workshop-overview/diagram1.png">&lt;/p></description></item></channel></rss>
