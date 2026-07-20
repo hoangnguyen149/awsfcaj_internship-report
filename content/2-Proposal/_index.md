@@ -5,111 +5,107 @@ weight: 2
 chapter: false
 pre: " <b> 2. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
 
-In this section, you need to summarize the contents of the workshop that you **plan** to conduct.
-
-# IoT Weather Platform for Lab Research
-## A Unified AWS Serverless Solution for Real-Time Weather Monitoring
+# Cloud Office Rental Management System
+## A Unified AWS Serverless & 3-Tier Solution for Real-Time Property Management
 
 ### 1. Executive Summary
-The IoT Weather Platform is designed for the ITea Lab team in Ho Chi Minh City to enhance weather data collection and analysis. It supports up to 5 weather stations, with potential scalability to 10-15, utilizing Raspberry Pi edge devices with ESP32 sensors to transmit data via MQTT. The platform leverages AWS Serverless services to deliver real-time monitoring, predictive analytics, and cost efficiency, with access restricted to 5 lab members via Amazon Cognito.
+The Cloud Office Rental Management System is designed to enhance office leasing operations for multi-building property managers. It supports operations for up to 50 buildings and 2,000 offices, with potential scalability for larger portfolios, utilizing a web-based platform to manage tenants, contracts, and maintenance. The platform leverages AWS Cloud services to deliver real-time monitoring, automated billing, and cost efficiency, with access restricted across four distinct user roles via Amazon Cognito.
 
 ### 2. Problem Statement
 ### What’s the Problem?
-Current weather stations require manual data collection, becoming unmanageable with multiple units. There is no centralized system for real-time data or analytics, and third-party platforms are costly and overly complex.
+Current property management requires manual data collection using spreadsheets and paper trails, becoming unmanageable with multiple buildings. There is no centralized system for real-time occupancy data, automated billing, or tenant maintenance requests.
 
 ### The Solution
-The platform uses AWS IoT Core to ingest MQTT data, AWS Lambda and API Gateway for processing, Amazon S3 for storage (including a data lake), and AWS Glue Crawlers and ETL jobs to extract, transform, and load data from the S3 data lake to another S3 bucket for analysis. AWS Amplify with Next.js provides the web interface, and Amazon Cognito ensures secure access. Similar to Thingsboard and CoreIoT, users can register new devices and manage connections, though this platform operates on a smaller scale and is designed for private use. Key features include real-time dashboards, trend analysis, and low operational costs.
+The platform uses Amazon EC2 with an Auto Scaling Group for the application tier, an Application Load Balancer for traffic distribution, and Amazon RDS (MySQL Multi-AZ) for transactional data. AWS Lambda and API Gateway handle asynchronous tasks like payment processing and notifications, while Amazon S3 stores contracts and frontend assets. Amazon CloudFront serves the ReactJS web interface, and Amazon Cognito ensures secure access. Similar to existing property management software, users can register and manage leases, though this platform operates entirely on a cloud-native, highly available architecture. Key features include real-time dashboards, automated invoicing, and low operational costs.
 
 ### Benefits and Return on Investment
-The solution establishes a foundational resource for lab members to develop a larger IoT platform, serving as a study resource, and provides a data foundation for AI enthusiasts for model training or analysis. It reduces manual reporting for each station via a centralized platform, simplifying management and maintenance, and improves data reliability. Monthly costs are $0.66 USD per the AWS Pricing Calculator, with a 12-month total of $7.92 USD. All IoT equipment costs are covered by the existing weather station setup, eliminating additional development expenses. The break-even period of 6-12 months is achieved through significant time savings from reduced manual work.
+The solution establishes a foundational centralized platform for property managers and tenants, serving as a highly available operational hub. It reduces manual reporting and contract management via a centralized platform, simplifying administration and improving data reliability. Monthly costs are estimated at $168 - $223 USD based on the AWS Pricing Calculator. The break-even period is achieved rapidly through significant time savings from reduced manual administrative work and optimized serverless cloud resource usage.
 
 ### 3. Solution Architecture
-The platform employs a serverless AWS architecture to manage data from 5 Raspberry Pi-based stations, scalable to 15. Data is ingested via AWS IoT Core, stored in an S3 data lake, and processed by AWS Glue Crawlers and ETL jobs to transform and load it into another S3 bucket for analysis. Lambda and API Gateway handle additional processing, while Amplify with Next.js hosts the dashboard, secured by Cognito. The architecture is detailed below:
+The platform employs a 3-tier and serverless AWS architecture to manage data from 50 buildings, scalable to thousands of users. Data is processed by EC2 instances, stored in RDS and S3, and asynchronous tasks are handled by Lambda. S3 with CloudFront hosts the dashboard, secured by Cognito. The architecture is detailed below:
+
+![Cloud Office Rental Architecture](/images/2-Proposal/architecture.jpeg)
+
+
 
 ![IoT Weather Station Architecture](/images/2-Proposal/edge_architecture.jpeg)
 
 ![IoT Weather Platform Architecture](/images/2-Proposal/platform_architecture.jpeg)
 
 ### AWS Services Used
-- **AWS IoT Core**: Ingests MQTT data from 5 stations, scalable to 15.
-- **AWS Lambda**: Processes data and triggers Glue jobs (two functions).
-- **Amazon API Gateway**: Facilitates web app communication.
-- **Amazon S3**: Stores raw data in a data lake and processed outputs (two buckets).
-- **AWS Glue**: Crawlers catalog data, and ETL jobs transform and load it.
-- **AWS Amplify**: Hosts the Next.js web interface.
-- **Amazon Cognito**: Secures access for lab users.
+- **Amazon EC2 & Auto Scaling**: Processes backend application logic (Node.js) dynamically based on load.
+- **AWS Lambda**: Processes serverless events like payments and email/SMS notifications.
+- **Amazon API Gateway**: Facilitates serverless API communication.
+- **Amazon S3**: Stores raw contract PDFs, images, and hosts static frontend files.
+- **Amazon RDS & DynamoDB**: Stores transactional data (MySQL) and audit logs (NoSQL).
+- **Application Load Balancer**: Facilitates web app traffic distribution.
+- **Amazon CloudFront**: Hosts and secures the ReactJS web interface globally.
+- **Amazon Cognito**: Secures access for Admin, Building Manager, Tenant, and Technician users.
 
 ### Component Design
-- **Edge Devices**: Raspberry Pi collects and filters sensor data, sending it to IoT Core.
-- **Data Ingestion**: AWS IoT Core receives MQTT messages from the edge devices.
-- **Data Storage**: Raw data is stored in an S3 data lake; processed data is stored in another S3 bucket.
-- **Data Processing**: AWS Glue Crawlers catalog the data, and ETL jobs transform it for analysis.
-- **Web Interface**: AWS Amplify hosts a Next.js app for real-time dashboards and analytics.
-- **User Management**: Amazon Cognito manages user access, allowing up to 5 active accounts.
+- **Frontend Interface**: ReactJS application hosted on S3 and delivered via CloudFront CDN.
+- **Application Tier**: Node.js backend hosted on EC2 instances within an Auto Scaling Group in private subnets.
+- **Data Storage**: Relational data stored in Multi-AZ RDS; logs stored in DynamoDB; files stored in S3.
+- **Event Processing**: AWS Lambda triggered by API Gateway and EventBridge for scheduled notifications.
+- **User Management**: Amazon Cognito manages user access, allowing distinct role-based permissions.
 
 ### 4. Technical Implementation
 **Implementation Phases**
-This project has two parts—setting up weather edge stations and building the weather platform—each following 4 phases:
-- Build Theory and Draw Architecture: Research Raspberry Pi setup with ESP32 sensors and design the AWS serverless architecture (1 month pre-internship)
-- Calculate Price and Check Practicality: Use AWS Pricing Calculator to estimate costs and adjust if needed (Month 1).
-- Fix Architecture for Cost or Solution Fit: Tweak the design (e.g., optimize Lambda with Next.js) to stay cost-effective and usable (Month 2).
-- Develop, Test, and Deploy: Code the Raspberry Pi setup, AWS services with CDK/SDK, and Next.js app, then test and release to production (Months 2-3).
+This project follows 4 phases for infrastructure and application deployment:
+- Build Theory and Draw Architecture: Research 3-tier cloud architectures and design the AWS topology including VPC, EC2, and RDS (Weeks 1-3).
+- Calculate Price and Check Practicality: Use AWS Pricing Calculator to estimate costs and adjust if needed.
+- Fix Architecture for Cost or Solution Fit: Tweak the design (e.g., using Lambda for background tasks) to stay cost-effective.
+- Develop, Test, and Deploy: Code the backend (Node.js), frontend (ReactJS), and AWS services using IaC, configure CI/CD (CodePipeline, CodeBuild, CodeDeploy), then test via JMeter and release to production (Weeks 4-12).
 
 **Technical Requirements**
-- Weather Edge Station: Sensors (temperature, humidity, rainfall, wind speed), a microcontroller (ESP32), and a Raspberry Pi as the edge device. Raspberry Pi runs Raspbian, handles Docker for filtering, and sends 1 MB/day per station via MQTT over Wi-Fi.
-- Weather Platform: Practical knowledge of AWS Amplify (hosting Next.js), Lambda (minimal use due to Next.js), AWS Glue (ETL), S3 (two buckets), IoT Core (gateway and rules), and Cognito (5 users). Use AWS CDK/SDK to code interactions (e.g., IoT Core rules to S3). Next.js reduces Lambda workload for the fullstack web app.
+- Application Stack: Frontend built with ReactJS, backend with Node.js/Express.js.
+- Cloud Platform: Practical knowledge of AWS EC2, Auto Scaling, RDS (MySQL), S3, CloudFront, API Gateway, Lambda, and Cognito.
+- DevOps & Automation: Use AWS CodePipeline, CodeBuild, and CodeDeploy for automated CI/CD and Blue/Green deployments.
 
 ### 5. Timeline & Milestones
 **Project Timeline**
-- Pre-Internship (Month 0): 1 month for planning and old station review.
-- Internship (Months 1-3): 3 months.
-    - Month 1: Study AWS and upgrade hardware.
-    - Month 2: Design and adjust architecture.
-    - Month 3: Implement, test, and launch.
-- Post-Launch: Up to 1 year for research.
+- Phase 1 (Weeks 1-3): Planning, architecture design, and foundational VPC infrastructure setup.
+- Phase 2 (Weeks 4-6): Deploy compute (EC2/ALB) and database (RDS/DynamoDB) tiers.
+- Phase 3 (Weeks 7-9): Implement Cognito authentication, serverless functions (Lambda), and frontend deployment.
+- Phase 4 (Weeks 10-12): CI/CD automation, load testing, monitoring setup, and documentation handover.
 
 ### 6. Budget Estimation
-You can find the budget estimation on the [AWS Pricing Calculator](https://calculator.aws/#/estimate?id=621f38b12a1ef026842ba2ddfe46ff936ed4ab01).  
-Or you can download the [Budget Estimation File](../attachments/budget_estimation.pdf).
-
+You can find the budget estimation on the AWS Pricing Calculator [AWS Pricing Calculator](https://calculator.aws/#/estimate?id=621f38b12a1ef026842ba2ddfe46ff936ed4ab01)  
+or download the [budget estimate file](../attachments/budget_estimation.pdf).  
 ### Infrastructure Costs
 - AWS Services:
-    - AWS Lambda: $0.00/month (1,000 requests, 512 MB storage).
-    - S3 Standard: $0.15/month (6 GB, 2,100 requests, 1 GB scanned).
-    - Data Transfer: $0.02/month (1 GB inbound, 1 GB outbound).
-    - AWS Amplify: $0.35/month (256 MB, 500 ms requests).
-    - Amazon API Gateway: $0.01/month (2,000 requests).
-    - AWS Glue ETL Jobs: $0.02/month (2 DPUs).
-    - AWS Glue Crawlers: $0.07/month (1 crawler).
-    - MQTT (IoT Core): $0.08/month (5 devices, 45,000 messages).
+    - EC2 (Auto Scaling): ~$30 - $75/month (2-5 x t3.small).
+    - Application Load Balancer: ~$18/month (1 ALB).
+    - RDS MySQL (Multi-AZ): ~$70/month (db.t3.small, 50GB).
+    - ElastiCache Redis: ~$12/month (cache.t3.micro).
+    - S3 + CloudFront: ~$20/month (50GB storage + 200GB transfer).
+    - Lambda + API Gateway: ~$5/month (~200,000 requests).
+    - DynamoDB (On-Demand): ~$5/month.
+    - Cognito: ~$0 - $10/month (5,000 MAU).
+    - CloudWatch + SNS: ~$8/month (Metrics, Logs, Alarms).
 
-Total: $0.7/month, $8.40/12 months
-
-- Hardware: $265 one-time (Raspberry Pi 5 and sensors).
+Total: ~$168 - $223/month.
 
 ### 7. Risk Assessment
 #### Risk Matrix
-- Network Outages: Medium impact, medium probability.
-- Sensor Failures: High impact, low probability.
-- Cost Overruns: Medium impact, low probability.
+- Security Intrusions (SQLi, XSS): High impact, Medium probability.
+- Cost Overruns: Medium impact, Medium probability.
+- Service Disruption / Hardware Failure: Critical impact, Low probability.
 
 #### Mitigation Strategies
-- Network: Local storage on Raspberry Pi with Docker.
-- Sensors: Regular checks and spares.
-- Cost: AWS budget alerts and optimization.
+- Security: Deploy AWS WAF with CloudFront and strictly configure Security Groups.
+- Cost: Set up AWS Budgets and CloudWatch alarms for monitoring usage.
+- Disruption: Implement Multi-AZ for RDS and Auto Scaling for EC2 instances.
 
 #### Contingency Plans
-- Revert to manual methods if AWS fails.
-- Use CloudFormation for cost-related rollbacks.
+- Revert to previous application versions via automated CI/CD rollback (CodeDeploy) if deployment fails.
+- Rely on automated RDS failover (45-70 seconds) if the primary database instance goes down.
 
 ### 8. Expected Outcomes
 #### Technical Improvements: 
-Real-time data and analytics replace manual processes.  
-Scalable to 10-15 stations.
+- Real-time data and automated analytics replace manual spreadsheet tracking.
+- Highly available system scalable to support thousands of concurrent users with sub-300ms response times.
 #### Long-term Value
-1-year data foundation for AI research.  
-Reusable for future projects.
+- Solid data foundation for future integration of AI/ML services (e.g., Amazon Personalize for office recommendations).
+- Reusable infrastructure as code (IaC) templates for future cloud deployments.

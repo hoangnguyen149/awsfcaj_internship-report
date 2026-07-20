@@ -1,58 +1,28 @@
 ---
 title: "Worklog Tuần 6"
-date: 2026-07-13
-weight: 1
+date: 2026-05-28
+weight: 6
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 6:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Hiểu và xây dựng kiến trúc Data Lake trên AWS.
+* Triển khai giải pháp Data Warehouse để chuyển đổi và điều phối dữ liệu.
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| 2   | - Thu thập dữ liệu (Ingestion): <br>&emsp; + Amazon S3 <br>&emsp; + Amazon Kinesis Data Streams                                                                                  | 22/05/2026   | 22/05/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 3   | - Quản trị & Bảo mật dữ liệu: <br>&emsp; + AWS Lake Formation <br>&emsp; + Amazon Macie                                                                                          | 23/05/2026   | 23/05/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 4   | - Chuyển đổi dữ liệu (Transformation): <br>&emsp; + AWS Glue, AWS Lambda <br>&emsp; + Amazon EMR                                                                                 | 24/05/2026   | 25/05/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 5   | - Điều phối dữ liệu (Orchestration): <br>&emsp; + AWS Step Functions <br>&emsp; + Amazon MWAA                                                                                    | 26/05/2026   | 26/05/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - **Thực hành:** <br>&emsp; + Thiết lập S3 ingestion <br>&emsp; + Chuyển đổi dữ liệu bằng Glue <br>&emsp; + Điều phối với Step Functions                                         | 27/05/2026   | 28/05/2026      | <https://cloudjourney.awsstudygroup.com/> |
 
 ### Kết quả đạt được tuần 6:
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Xây dựng nền tảng Data Lake bằng cách sử dụng S3 và Kinesis để thu thập dữ liệu.
+* Quản trị dữ liệu và phát hiện bất thường với AWS Lake Formation và Macie.
+* Thực hiện quy trình chuyển đổi dữ liệu (ETL) bằng AWS Glue, Lambda và EMR.
+* Điều phối thành công các luồng công việc phức tạp sử dụng Step Functions và MWAA.

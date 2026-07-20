@@ -1,58 +1,27 @@
 ---
 title: "Worklog Tuần 12"
-date: 2026-07-13
-weight: 2
+date: 2026-07-10
+weight: 12
 chapter: false
-pre: " <b> 1.12 </b> "
+pre: " <b> 1.12. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
 ### Mục tiêu tuần 12:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Hoàn thiện và rà soát tổng thể Dự án thực tế.
+* Chuẩn bị CV chuyên nghiệp và rèn luyện kỹ năng phỏng vấn tuyển dụng.
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| 2   | - Hoàn thiện Dự án: <br>&emsp; + Hoàn tất các hạng mục của dự án thực tế <br>&emsp; + Kiểm thử hệ thống                                                                          | 03/07/2026   | 04/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 3   | - Rà soát Dự án: <br>&emsp; + Đánh giá và tổng kết dự án                                                                                                                         | 05/07/2026   | 05/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 4   | - Chuẩn bị CV: <br>&emsp; + Hướng dẫn viết CV IT chuyên nghiệp                                                                                                                  | 06/07/2026   | 07/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 5   | - Kỹ năng phỏng vấn: <br>&emsp; + Chuẩn bị câu trả lời và hồ sơ năng lực                                                                                                         | 08/07/2026   | 08/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - **Thực hành:** <br>&emsp; + Hoàn thiện CV cá nhân <br>&emsp; + Phỏng vấn thử (Mock Interview)                                                                                  | 09/07/2026   | 10/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
 
 ### Kết quả đạt được tuần 12:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Hoàn thành và kiểm thử thành công toàn bộ Dự án thực tế (Cloud Engineer Project).
+* Thiết kế được bản CV (hồ sơ năng lực) chuyên nghiệp, phù hợp với ngành công nghệ.
+* Được trang bị kỹ năng thực tế để tự tin bước vào các buổi phỏng vấn tuyển dụng.

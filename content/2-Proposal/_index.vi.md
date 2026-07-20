@@ -5,104 +5,105 @@ weight: 2
 chapter: false
 pre: " <b> 2. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+# Hệ Thống Quản Lý Cho Thuê Văn Phòng Trên Cloud (Cloud Office Rental Management System)
+## Giải pháp AWS Serverless & 3-Tier Thống nhất cho Quản lý Bất động sản theo Thời gian thực
 
-Tại phần này, bạn cần tóm tắt các nội dung trong workshop mà bạn **dự tính** sẽ làm.
+### 1. Tóm tắt dự án (Executive Summary)
+Hệ thống Quản lý Cho thuê Văn phòng trên Cloud được thiết kế nhằm nâng cao hiệu quả hoạt động cho thuê văn phòng đối với các đơn vị quản lý nhiều tòa nhà. Hệ thống hỗ trợ vận hành lên đến 50 tòa nhà và 2.000 văn phòng, với khả năng mở rộng cho các quy mô lớn hơn, sử dụng nền tảng web để quản lý khách thuê, hợp đồng và bảo trì. Nền tảng tận dụng các dịch vụ của AWS Cloud để cung cấp khả năng giám sát theo thời gian thực, lập hóa đơn tự động và tối ưu chi phí, với quyền truy cập được phân quyền chặt chẽ cho bốn vai trò người dùng khác nhau thông qua Amazon Cognito.
 
-# IoT Weather Platform for Lab Research  
-## Giải pháp AWS Serverless hợp nhất cho giám sát thời tiết thời gian thực  
+### 2. Phát biểu vấn đề (Problem Statement)
+### Vấn đề là gì?
+Việc quản lý bất động sản hiện tại đòi hỏi phải thu thập dữ liệu thủ công bằng bảng tính và giấy tờ, dẫn đến tình trạng khó kiểm soát khi số lượng tòa nhà tăng lên. Doanh nghiệp không có một hệ thống tập trung nào để cung cấp dữ liệu tỷ lệ lấp đầy theo thời gian thực, thanh toán tự động hay quản lý yêu cầu bảo trì của khách thuê.
 
-### 1. Tóm tắt điều hành  
-IoT Weather Platform được thiết kế dành cho nhóm *ITea Lab* tại TP. Hồ Chí Minh nhằm nâng cao khả năng thu thập và phân tích dữ liệu thời tiết. Nền tảng hỗ trợ tối đa 5 trạm thời tiết, có khả năng mở rộng lên 10–15 trạm, sử dụng thiết bị biên Raspberry Pi kết hợp cảm biến ESP32 để truyền dữ liệu qua MQTT. Nền tảng tận dụng các dịch vụ AWS Serverless để cung cấp giám sát thời gian thực, phân tích dự đoán và tiết kiệm chi phí, với quyền truy cập giới hạn cho 5 thành viên phòng lab thông qua Amazon Cognito.  
+### Giải pháp
+Nền tảng sử dụng Amazon EC2 với Auto Scaling Group cho tầng ứng dụng (application tier), Application Load Balancer để phân phối lưu lượng và Amazon RDS (MySQL Multi-AZ) cho dữ liệu giao dịch. AWS Lambda và API Gateway xử lý các tác vụ bất đồng bộ như xử lý thanh toán và gửi thông báo, trong khi Amazon S3 lưu trữ hợp đồng và các tài nguyên frontend tĩnh. Amazon CloudFront phân phối giao diện web ReactJS và Amazon Cognito đảm bảo xác thực truy cập an toàn. Tương tự như các phần mềm quản lý bất động sản hiện có, người dùng có thể đăng ký và quản lý hợp đồng thuê, nhưng nền tảng này hoạt động hoàn toàn trên kiến trúc cloud-native, có độ sẵn sàng cao. Các tính năng chính bao gồm dashboard theo thời gian thực, lập hóa đơn tự động và chi phí vận hành thấp.
 
-### 2. Tuyên bố vấn đề  
-*Vấn đề hiện tại*  
-Các trạm thời tiết hiện tại yêu cầu thu thập dữ liệu thủ công, khó quản lý khi có nhiều trạm. Không có hệ thống tập trung cho dữ liệu hoặc phân tích thời gian thực, và các nền tảng bên thứ ba thường tốn kém và quá phức tạp.  
+### Lợi ích và Hiệu quả đầu tư (ROI)
+Giải pháp thiết lập một nền tảng tập trung cơ bản cho người quản lý và khách thuê, đóng vai trò là trung tâm vận hành có độ sẵn sàng cao. Nó giảm thiểu việc báo cáo thủ công và quản lý hợp đồng thông qua một nền tảng tập trung, đơn giản hóa công tác quản trị và cải thiện độ tin cậy của dữ liệu. Chi phí hàng tháng ước tính khoảng $168 - $223 USD dựa trên bảng tính AWS Pricing Calculator. Điểm hòa vốn đạt được nhanh chóng nhờ tiết kiệm đáng kể thời gian từ việc giảm bớt khối lượng công việc quản trị thủ công và tối ưu hóa việc sử dụng tài nguyên cloud serverless.
 
-*Giải pháp*  
-Nền tảng sử dụng AWS IoT Core để tiếp nhận dữ liệu MQTT, AWS Lambda và API Gateway để xử lý, Amazon S3 để lưu trữ (bao gồm data lake), và AWS Glue Crawlers cùng các tác vụ ETL để trích xuất, chuyển đổi, tải dữ liệu từ S3 data lake sang một S3 bucket khác để phân tích. AWS Amplify với Next.js cung cấp giao diện web, và Amazon Cognito đảm bảo quyền truy cập an toàn. Tương tự như Thingsboard và CoreIoT, người dùng có thể đăng ký thiết bị mới và quản lý kết nối, nhưng nền tảng này hoạt động ở quy mô nhỏ hơn và phục vụ mục đích sử dụng nội bộ. Các tính năng chính bao gồm bảng điều khiển thời gian thực, phân tích xu hướng và chi phí vận hành thấp.  
+### 3. Kiến trúc giải pháp (Solution Architecture)
+Nền tảng sử dụng kiến trúc AWS 3-tier (3 tầng) và serverless để quản lý dữ liệu từ 50 tòa nhà, có khả năng mở rộng lên hàng nghìn người dùng. Dữ liệu được xử lý bởi các instance EC2, lưu trữ trong RDS và S3, trong khi các tác vụ bất đồng bộ được Lambda xử lý. S3 kết hợp CloudFront dùng để lưu trữ và phân phối dashboard, được bảo mật bởi Cognito. Kiến trúc chi tiết như sau:
 
-*Lợi ích và hoàn vốn đầu tư (ROI)*  
-Giải pháp tạo nền tảng cơ bản để các thành viên phòng lab phát triển một nền tảng IoT lớn hơn, đồng thời cung cấp nguồn dữ liệu cho những người nghiên cứu AI phục vụ huấn luyện mô hình hoặc phân tích. Nền tảng giảm bớt báo cáo thủ công cho từng trạm thông qua hệ thống tập trung, đơn giản hóa quản lý và bảo trì, đồng thời cải thiện độ tin cậy dữ liệu. Chi phí hàng tháng ước tính 0,66 USD (theo AWS Pricing Calculator), tổng cộng 7,92 USD cho 12 tháng. Tất cả thiết bị IoT đã được trang bị từ hệ thống trạm thời tiết hiện tại, không phát sinh chi phí phát triển thêm. Thời gian hoàn vốn 6–12 tháng nhờ tiết kiệm đáng kể thời gian thao tác thủ công.  
+![Cloud Office Rental Architecture](/images/2-Proposal/architecture.jpeg)
 
-### 3. Kiến trúc giải pháp  
-Nền tảng áp dụng kiến trúc AWS Serverless để quản lý dữ liệu từ 5 trạm dựa trên Raspberry Pi, có thể mở rộng lên 15 trạm. Dữ liệu được tiếp nhận qua AWS IoT Core, lưu trữ trong S3 data lake và xử lý bởi AWS Glue Crawlers và ETL jobs để chuyển đổi và tải vào một S3 bucket khác cho mục đích phân tích. Lambda và API Gateway xử lý bổ sung, trong khi Amplify với Next.js cung cấp bảng điều khiển được bảo mật bởi Cognito.  
 
 ![IoT Weather Station Architecture](/images/2-Proposal/edge_architecture.jpeg)
 
 ![IoT Weather Platform Architecture](/images/2-Proposal/platform_architecture.jpeg)
+### Các dịch vụ AWS sử dụng
+- **Amazon EC2 & Auto Scaling**: Xử lý logic ứng dụng backend (Node.js) có khả năng tự động mở rộng theo tải truy cập.
+- **AWS Lambda**: Xử lý các sự kiện serverless như thanh toán và gửi thông báo qua email/SMS.
+- **Amazon API Gateway**: Xử lý các giao tiếp API serverless.
+- **Amazon S3**: Lưu trữ file PDF hợp đồng gốc, hình ảnh và lưu trữ các file frontend tĩnh.
+- **Amazon RDS & DynamoDB**: Lưu trữ dữ liệu giao dịch (MySQL) và nhật ký hoạt động/audit logs (NoSQL).
+- **Application Load Balancer**: Phân phối lưu lượng truy cập ứng dụng web.
+- **Amazon CloudFront**: Lưu trữ cache và phân phối an toàn giao diện web ReactJS trên toàn cầu.
+- **Amazon Cognito**: Bảo mật quyền truy cập cho người dùng là Admin, Quản lý tòa nhà, Khách thuê và Nhân viên kỹ thuật.
 
-*Dịch vụ AWS sử dụng*  
-- *AWS IoT Core*: Tiếp nhận dữ liệu MQTT từ 5 trạm, mở rộng lên 15.  
-- *AWS Lambda*: Xử lý dữ liệu và kích hoạt Glue jobs (2 hàm).  
-- *Amazon API Gateway*: Giao tiếp với ứng dụng web.  
-- *Amazon S3*: Lưu trữ dữ liệu thô (data lake) và dữ liệu đã xử lý (2 bucket).  
-- *AWS Glue*: Crawlers lập chỉ mục dữ liệu, ETL jobs chuyển đổi và tải dữ liệu.  
-- *AWS Amplify*: Lưu trữ giao diện web Next.js.  
-- *Amazon Cognito*: Quản lý quyền truy cập cho người dùng phòng lab.  
+### Thiết kế thành phần (Component Design)
+- **Giao diện Frontend**: Ứng dụng ReactJS được lưu trữ trên S3 và phân phối qua mạng nội dung CloudFront CDN.
+- **Tầng ứng dụng (Application Tier)**: Backend Node.js được host trên các instance EC2 nằm trong Auto Scaling Group tại các private subnet.
+- **Lưu trữ dữ liệu**: Dữ liệu có cấu trúc lưu trữ trong Multi-AZ RDS; log lưu trữ trong DynamoDB; file lưu trữ trong S3.
+- **Xử lý sự kiện**: AWS Lambda được kích hoạt bởi API Gateway cho các API chuyên biệt và bởi EventBridge cho các tác vụ lên lịch tự động.
+- **Quản lý người dùng**: Amazon Cognito quản lý quyền truy cập người dùng, cho phép phân quyền theo từng vai trò cụ thể.
 
-*Thiết kế thành phần*  
-- *Thiết bị biên*: Raspberry Pi thu thập và lọc dữ liệu cảm biến, gửi tới IoT Core.  
-- *Tiếp nhận dữ liệu*: AWS IoT Core nhận tin nhắn MQTT từ thiết bị biên.  
-- *Lưu trữ dữ liệu*: Dữ liệu thô lưu trong S3 data lake; dữ liệu đã xử lý lưu ở một S3 bucket khác.  
-- *Xử lý dữ liệu*: AWS Glue Crawlers lập chỉ mục dữ liệu; ETL jobs chuyển đổi để phân tích.  
-- *Giao diện web*: AWS Amplify lưu trữ ứng dụng Next.js cho bảng điều khiển và phân tích thời gian thực.  
-- *Quản lý người dùng*: Amazon Cognito giới hạn 5 tài khoản hoạt động.  
+### 4. Triển khai kỹ thuật (Technical Implementation)
+**Các giai đoạn triển khai**
+Dự án này bao gồm 4 giai đoạn để triển khai hạ tầng và ứng dụng:
+- Xây dựng lý thuyết và Thiết kế kiến trúc: Nghiên cứu kiến trúc cloud 3-tier và thiết kế topology AWS bao gồm VPC, EC2 và RDS (Tuần 1-3).
+- Tính toán giá và Kiểm tra tính thực tế: Sử dụng AWS Pricing Calculator để ước tính chi phí và điều chỉnh thiết kế nếu cần thiết.
+- Điều chỉnh kiến trúc cho phù hợp với chi phí/giải pháp: Tinh chỉnh thiết kế (ví dụ: sử dụng Lambda cho các tác vụ nền) để duy trì hiệu quả chi phí.
+- Phát triển, Kiểm thử và Triển khai: Viết mã nguồn backend (Node.js), frontend (ReactJS) và thiết lập dịch vụ AWS bằng IaC, cấu hình hệ thống CI/CD (CodePipeline, CodeBuild, CodeDeploy), sau đó kiểm thử qua JMeter và phát hành lên môi trường production (Tuần 4-12).
 
-### 4. Triển khai kỹ thuật  
-*Các giai đoạn triển khai*  
-Dự án gồm 2 phần — thiết lập trạm thời tiết biên và xây dựng nền tảng thời tiết — mỗi phần trải qua 4 giai đoạn:  
-1. *Nghiên cứu và vẽ kiến trúc*: Nghiên cứu Raspberry Pi với cảm biến ESP32 và thiết kế kiến trúc AWS Serverless (1 tháng trước kỳ thực tập).  
-2. *Tính toán chi phí và kiểm tra tính khả thi*: Sử dụng AWS Pricing Calculator để ước tính và điều chỉnh (Tháng 1).  
-3. *Điều chỉnh kiến trúc để tối ưu chi phí/giải pháp*: Tinh chỉnh (ví dụ tối ưu Lambda với Next.js) để đảm bảo hiệu quả (Tháng 2).  
-4. *Phát triển, kiểm thử, triển khai*: Lập trình Raspberry Pi, AWS services với CDK/SDK và ứng dụng Next.js, sau đó kiểm thử và đưa vào vận hành (Tháng 2–3).  
+**Yêu cầu kỹ thuật**
+- Công nghệ ứng dụng: Frontend xây dựng bằng ReactJS, backend xây dựng bằng Node.js/Express.js.
+- Nền tảng Cloud: Yêu cầu kiến thức thực hành về AWS EC2, Auto Scaling, RDS (MySQL), S3, CloudFront, API Gateway, Lambda, và Cognito.
+- DevOps & Tự động hóa: Sử dụng AWS CodePipeline, CodeBuild, và CodeDeploy để thiết lập CI/CD tự động và cơ chế triển khai Blue/Green.
 
-*Yêu cầu kỹ thuật*  
-- *Trạm thời tiết biên*: Cảm biến (nhiệt độ, độ ẩm, lượng mưa, tốc độ gió), vi điều khiển ESP32, Raspberry Pi làm thiết bị biên. Raspberry Pi chạy Raspbian, sử dụng Docker để lọc dữ liệu và gửi 1 MB/ngày/trạm qua MQTT qua Wi-Fi.  
-- *Nền tảng thời tiết*: Kiến thức thực tế về AWS Amplify (lưu trữ Next.js), Lambda (giảm thiểu do Next.js xử lý), AWS Glue (ETL), S3 (2 bucket), IoT Core (gateway và rules), và Cognito (5 người dùng). Sử dụng AWS CDK/SDK để lập trình (ví dụ IoT Core rules tới S3). Next.js giúp giảm tải Lambda cho ứng dụng web fullstack.  
+### 5. Kế hoạch & Các mốc thực hiện (Timeline & Milestones)
+**Tiến độ dự án**
+- Giai đoạn 1 (Tuần 1-3): Lập kế hoạch, thiết kế kiến trúc và thiết lập hạ tầng mạng VPC cơ bản.
+- Giai đoạn 2 (Tuần 4-6): Triển khai tầng tính toán (EC2/ALB) và cơ sở dữ liệu (RDS/DynamoDB).
+- Giai đoạn 3 (Tuần 7-9): Tích hợp xác thực Cognito, các hàm serverless (Lambda) và triển khai frontend.
+- Giai đoạn 4 (Tuần 10-12): Tự động hóa CI/CD, kiểm thử tải (load testing), thiết lập giám sát và bàn giao tài liệu.
 
-### 5. Lộ trình & Mốc triển khai  
-- *Trước thực tập (Tháng 0)*: 1 tháng lên kế hoạch và đánh giá trạm cũ.  
-- *Thực tập (Tháng 1–3)*:  
-    - Tháng 1: Học AWS và nâng cấp phần cứng.  
-    - Tháng 2: Thiết kế và điều chỉnh kiến trúc.  
-    - Tháng 3: Triển khai, kiểm thử, đưa vào sử dụng.  
-- *Sau triển khai*: Nghiên cứu thêm trong vòng 1 năm.  
+### 6. Ước tính chi phí (Budget Estimation)
+Bạn có thể tìm thấy bảng ước tính chi phí chi tiết trên công cụ AWS Pricing Calculator.[Công cụ tính giá AWS](https://computer.aws/#/estimate?id=621f38b12a1ef026842ba2ddfe46ff936ed4ab01)
+Hoặc tải xuống [tệp ước tính ngân sách](../attachments/budget_estimation.pdf). 
 
-### 6. Ước tính ngân sách  
-Có thể xem chi phí trên [AWS Pricing Calculator](https://calculator.aws/#/estimate?id=621f38b12a1ef026842ba2ddfe46ff936ed4ab01)  
-Hoặc tải [tệp ước tính ngân sách](../attachments/budget_estimation.pdf).  
+### Chi phí hạ tầng
+- Các dịch vụ AWS:
+    - EC2 (Auto Scaling): ~$30 - $75/tháng (2-5 x t3.small).
+    - Application Load Balancer: ~$18/tháng (1 ALB).
+    - RDS MySQL (Multi-AZ): ~$70/tháng (db.t3.small, 50GB).
+    - ElastiCache Redis: ~$12/tháng (cache.t3.micro).
+    - S3 + CloudFront: ~$20/tháng (50GB lưu trữ + 200GB data transfer).
+    - Lambda + API Gateway: ~$5/tháng (~200,000 requests).
+    - DynamoDB (On-Demand): ~$5/tháng.
+    - Cognito: ~$0 - $10/tháng (5,000 MAU).
+    - CloudWatch + SNS: ~$8/tháng (Metrics, Logs, Alarms).
 
-*Chi phí hạ tầng*  
-- AWS Lambda: 0,00 USD/tháng (1.000 request, 512 MB lưu trữ).  
-- S3 Standard: 0,15 USD/tháng (6 GB, 2.100 request, 1 GB quét).  
-- Truyền dữ liệu: 0,02 USD/tháng (1 GB vào, 1 GB ra).  
-- AWS Amplify: 0,35 USD/tháng (256 MB, request 500 ms).  
-- Amazon API Gateway: 0,01 USD/tháng (2.000 request).  
-- AWS Glue ETL Jobs: 0,02 USD/tháng (2 DPU).  
-- AWS Glue Crawlers: 0,07 USD/tháng (1 crawler).  
-- MQTT (IoT Core): 0,08 USD/tháng (5 thiết bị, 45.000 tin nhắn).  
+Tổng cộng: ~$168 - $223/tháng.
 
-*Tổng*: 0,7 USD/tháng, 8,40 USD/12 tháng  
-- *Phần cứng*: 265 USD một lần (Raspberry Pi 5 và cảm biến).  
+### 7. Đánh giá rủi ro (Risk Assessment)
+#### Ma trận rủi ro
+- Tấn công bảo mật (SQLi, XSS): Mức độ ảnh hưởng Cao, Xác suất Trung bình.
+- Vượt ngân sách: Mức độ ảnh hưởng Trung bình, Xác suất Trung bình.
+- Gián đoạn dịch vụ / Hỏng hóc phần cứng: Mức độ ảnh hưởng Đặc biệt nghiêm trọng, Xác suất Thấp.
 
-### 7. Đánh giá rủi ro  
-*Ma trận rủi ro*  
-- Mất mạng: Ảnh hưởng trung bình, xác suất trung bình.  
-- Hỏng cảm biến: Ảnh hưởng cao, xác suất thấp.  
-- Vượt ngân sách: Ảnh hưởng trung bình, xác suất thấp.  
+#### Biện pháp giảm thiểu
+- Bảo mật: Triển khai AWS WAF bảo vệ CloudFront và cấu hình chặt chẽ các luật Security Group.
+- Chi phí: Thiết lập AWS Budgets và các cảnh báo CloudWatch để chủ động giám sát mức sử dụng tài nguyên.
+- Gián đoạn: Triển khai kiến trúc Multi-AZ cho RDS và cơ chế Auto Scaling cho các máy chủ EC2.
 
-*Chiến lược giảm thiểu*  
-- Mạng: Lưu trữ cục bộ trên Raspberry Pi với Docker.  
-- Cảm biến: Kiểm tra định kỳ, dự phòng linh kiện.  
-- Chi phí: Cảnh báo ngân sách AWS, tối ưu dịch vụ.  
+#### Kế hoạch dự phòng
+- Khôi phục (Rollback) về các phiên bản ứng dụng hoạt động ổn định trước đó thông qua tính năng rollback CI/CD tự động (CodeDeploy) nếu quá trình triển khai gặp lỗi.
+- Dựa vào cơ chế tự động chuyển đổi dự phòng (failover) của RDS (mất khoảng 45-70 giây) nếu database chính gặp sự cố vật lý.
 
-*Kế hoạch dự phòng*  
-- Quay lại thu thập thủ công nếu AWS gặp sự cố.  
-- Sử dụng CloudFormation để khôi phục cấu hình liên quan đến chi phí.  
-
-### 8. Kết quả kỳ vọng  
-*Cải tiến kỹ thuật*: Dữ liệu và phân tích thời gian thực thay thế quy trình thủ công. Có thể mở rộng tới 10–15 trạm.  
-*Giá trị dài hạn*: Nền tảng dữ liệu 1 năm cho nghiên cứu AI, có thể tái sử dụng cho các dự án tương lai.
+### 8. Kết quả mong đợi (Expected Outcomes)
+#### Kết quả kỹ thuật: 
+- Quản lý bằng dữ liệu theo thời gian thực và phân tích tự động thay thế hoàn toàn cho việc theo dõi thủ công bằng bảng tính Excel.
+- Hệ thống có độ sẵn sàng cao, có khả năng tự động mở rộng để hỗ trợ hàng nghìn người dùng đồng thời với thời gian phản hồi luôn duy trì dưới 300ms.
+#### Giá trị dài hạn
+- Xây dựng nền tảng dữ liệu vững chắc cho việc tích hợp các dịch vụ AI/ML trong tương lai (ví dụ: Sử dụng Amazon Personalize để tự động gợi ý văn phòng phù hợp).
+- Cung cấp bộ thư viện cơ sở hạ tầng dưới dạng mã (IaC templates) có thể tái sử dụng cho các dự án triển khai cloud sau này của doanh nghiệp.

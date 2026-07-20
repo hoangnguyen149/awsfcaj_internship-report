@@ -3,47 +3,41 @@ title: "Internship Report"
 date: 2026-07-13
 weight: 1
 chapter: false
+pre: " <b> 1. </b> "
 ---
 
-# Internship Report
+# Work Log
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
+> A learning journey that strengthened both technical cloud skills and professional readiness in a real-world AWS environment.
 
-### Student Information:
-&emsp; **Full Name:** Nguyen Hoang Long
+## 👤 Student Information
 
-&emsp; **Student ID:** 2280601768
-
-&emsp; **University:** Ho Chi Minh City University of Technology (HUTECH)
-
-&emsp; **Major:** Information Technology
-
-&emsp; **Specialization:** Information Security
-
-&emsp; **Class:** 22DTHE3
-
-&emsp; **Internship Company:** Amazon Web Services Vietnam Company Limited
-
-&emsp; **Company Instructor:** Nguyen Gia Hung
-
-&emsp; **University Instructor:** Phan Dinh Duy Thong
-
-&emsp; **Internship Duration:** *(Thời gian cụ thể đã được lược bỏ)*
+- **Full Name:** Nguyen Hoang Long
+- **Student ID:** 2280601768
+- **University:** Ho Chi Minh City University of Technology (HUTECH)
+- **Major:** Information Technology
+- **Specialization:** Information Security
+- **Class:** 22DTHE3
+- **Internship Company:** Amazon Web Services Vietnam Company Limited
+- **Company Instructor:** Nguyen Gia Hung
+- **University Instructor:** Phan Dinh Duy Thong
+- **Internship Duration:** *(Thời gian cụ thể đã được lược bỏ)*
 
 ![Your profile picture](/images/avatar.png)
 
-### Work Progress:
-*   **Week 1:** Learn an overview of AWS, Global Infrastructure, core services (Compute, Storage, Database, Networking), and the Shared Responsibility Model. Practice creating an AWS account, using the Management Console, configuring IAM, and creating basic EC2 and S3.
-*   **Week 2:** Design and implement networks using VPC, CloudFront, Route 53, Direct Connect, and VPN. Configure Elastic Load Balancing and API Gateway. Manage and secure networks with CloudWatch, WAF, Shield, and Security Groups.
-*   **Week 3:** Explore Compute services like EC2, Lambda, ECR, ECS, EKS, Fargate, and Elastic Beanstalk. Optimize costs with AWS Savings Plan, and practice deploying web and serverless applications.
-*   **Week 4:** Manage storage with S3, EBS, EFS, FSx, and optimize with lifecycle policies. Manage comprehensive backups using AWS Backup, and practice managing S3 buckets and EBS snapshots.
-*   **Week 5:** Manage relational databases (RDS, Aurora) and NoSQL databases (DynamoDB). Analyze data with Amazon Redshift, and practice configuring MySQL on RDS, DynamoDB tables, and ElastiCache.
-*   **Week 6:** Build a Data Lake using S3, Kinesis, Lake Formation, and Macie. Build a Data Warehouse with AWS Glue, Lambda, EMR, Step Functions, and MWAA.
-*   **Week 7:** Ensure compliance and threat detection with Amazon GuardDuty and AWS Inspector. Manage encryption keys (KMS, CloudHSM) and identity/secrets (AWS SSO, Cognito, Secrets Manager).
-*   **Week 8:** Research AWS architecture design and apply the AWS Well-Architected Framework. Practice drawing accurate system architecture diagrams.
-*   **Week 9:** Systematize learned knowledge and prepare foundational knowledge to take AWS certification exams.
-*   **Week 10:** Take the Final Quiz to evaluate end-of-course capability and create a solution proposal.
-*   **Week 11:** Participate in in-depth workshops, deploy the Cloud Engineer Project, and develop documentation/blog writing skills.
-*   **Week 12:** Complete and review the practical project, receive professional CV writing guidance, and prepare for interviews.
+## 📘 Work Progress
+
+The following activities were completed throughout the 12-week internship, focusing on AWS foundations, cloud architecture, and professional development.
+
+- **Week 1:** Introduction to the AWS ecosystem, core services such as Compute, Storage, Database, and Networking, along with the shared responsibility model and cost management. Created an AWS account and performed basic configurations with EC2, S3, VPC, and IAM.
+- **Week 2:** Designed and deployed hybrid networks with VPC, CloudFront, Route 53, Direct Connect, and VPN. Managed, optimized, and secured networks using CloudWatch, WAF, and Security Groups.
+- **Week 3:** Explored compute services in depth, including EC2, Lambda, EKS, ECS, and Fargate. Practiced deploying EC2 virtual servers, web applications, container registries with ECR, and serverless applications.
+- **Week 4:** Managed diverse storage solutions such as S3, EBS, EFS, and FSx. Optimized storage using lifecycle policies and practiced comprehensive centralized backup with AWS Backup.
+- **Week 5:** Administered relational databases (RDS, Aurora) and NoSQL databases (DynamoDB). Analyzed large-scale data with Redshift and practiced configuring MySQL, auto-scaling DynamoDB, and ElastiCache.
+- **Week 6:** Built a Data Lake using S3, Kinesis, Lake Formation, and Macie. Deployed a Data Warehouse and orchestrated workflows with AWS Glue, Lambda, EMR, and Step Functions.
+- **Week 7:** Focused on security and compliance by studying standards such as ISO, PCI DSS, and HIPAA, while using GuardDuty for threat detection. Managed encryption keys, identity certificates, and access through KMS, CloudHSM, SSO, and Cognito.
+- **Week 8:** Studied and designed cloud system architectures based on the AWS Well-Architected Framework. Practiced visualizing architectures by drawing AWS diagrams.
+- **Week 9:** Summarized and consolidated all the knowledge learned throughout the program. Prepared foundational knowledge, tips, and strategies for AWS certification exams.
+- **Week 10:** Took the Final Quiz to assess end-of-program competency. Prepared a real-world solution proposal for a client and took an AWS certification exam.
+- **Week 11:** Participated in in-depth workshops and worked on a real-world Cloud Engineer project. Contributed content by writing project documentation, blog posts, and translating AWS documentation.
+- **Week 12:** Received guidance on professional CV writing and prepared for interviews with technology companies.

@@ -5,43 +5,32 @@ weight: 7
 chapter: false
 pre: " <b> 7. </b> "
 ---
+## Self-Evaluation
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
+During the 12 weeks of participating in the **AWS First Cloud Journey (FCJ) – Cloud Engineer** internship program in Ho Chi Minh City, I had the opportunity to learn, practice, and apply the knowledge acquired at university to hands-on labs and practical projects on the AWS platform.
 
-> Here, you can freely share your personal opinions about your experience participating in the First Cloud AI Journey program. This will help the FCAJ team improve any shortcomings based on the following aspects:
+I completed the full learning path, from AWS fundamentals, Networking, Compute, Storage, Database, Data Lake/Data Warehouse, Security, to Architecting on AWS, while also executing a practical Cloud Engineer project in the final 2 weeks. Through this process, I improved skills such as: deploying and managing infrastructure on AWS, writing technical documentation/reports, self-studying English materials, and working and communicating within a learning community.
 
-### Overall Evaluation
+Regarding work ethic, I always strove to complete assignments and weekly progress on time, proactively asked questions when facing difficulties, and actively communicated with mentors and other peers in the group to enhance learning efficiency.
 
-**1. Working Environment**  
-The working environment is very friendly and open. FCAJ members are always willing to help whenever I encounter difficulties, even outside working hours. The workspace is tidy and comfortable, helping me focus better. However, I think it would be nice to have more social gatherings or team bonding activities to strengthen relationships.
+To objectively reflect on my internship journey, I would like to self-evaluate based on the criteria below:
 
-**2. Support from Mentor / Team Admin**  
-The mentor provides very detailed guidance, explains clearly when I don’t understand, and always encourages me to ask questions. The admin team supports administrative tasks, provides necessary documents, and creates favorable conditions for me to work effectively. I especially appreciate that the mentor allows me to try and solve problems myself instead of just giving the answer.
+| No. | Criteria | Description | Good | Fair | Average |
+|---|---|---|:---:|:---:|:---:|
+| 1 | Professional Knowledge and Skills | Understanding of AWS, ability to apply knowledge to practical labs, proficiency in using tools, quality of products/assignments | ✅ | ☐ | ☐ |
+| 2 | Learning Ability | Absorbing new knowledge about AWS services, learning quickly through documentation and labs | ☐ | ✅ | ☐ |
+| 3 | Proactiveness | Self-researching documentation, proactively registering and completing labs without being reminded | ✅ | ☐ | ☐ |
+| 4 | Sense of Responsibility | Completing study contents according to the weekly schedule, ensuring the quality of submitted work | ✅ | ☐ | ☐ |
+| 5 | Discipline | Adhering to the study schedule, submission deadlines, and program regulations | ☐ | ☐ | ✅ |
+| 6 | Eagerness to Improve | Willing to accept feedback from mentors and adjust/improve work | ☐ | ✅ | ☐ |
+| 7 | Communication | Presenting worklogs, reporting progress, and discussing technical issues clearly | ☐ | ✅ | ☐ |
+| 8 | Team Collaboration | Participating in discussions, supporting other students in the AWS Study Group community | ✅ | ☐ | ☐ |
+| 9 | Professional Conduct | Respecting mentors, organizers, and other members in the program | ✅ | ☐ | ☐ |
+| 10 | Problem-Solving Mindset | Identifying errors/issues while doing labs, finding solutions, and proposing fixes | ☐ | ✅ | ☐ |
+| 11 | Contribution to Project/Organization | Effectiveness in executing the practical Cloud Engineer project, contributing articles/workshops to the community | ✅ | ☐ | ☐ |
+| 12 | Overall | Overall assessment of the entire internship process at the FCJ program | ✅ | ☐ | ☐ |
 
-**3. Relevance of Work to Academic Major**  
-The tasks I was assigned align well with the knowledge I learned at university, while also introducing me to new areas I had never encountered before. This allowed me to both strengthen my foundational knowledge and gain practical skills.
-
-**4. Learning & Skill Development Opportunities**  
-During the internship, I learned many new skills such as using project management tools, teamwork skills, and professional communication in a corporate environment. The mentor also shared valuable real-world experiences that helped me better plan my career path.
-
-**5. Company Culture & Team Spirit**  
-The company culture is very positive: everyone respects each other, works seriously but still keeps things enjoyable. When there are urgent projects, everyone works together and supports one another regardless of their position. This made me feel like a real part of the team, even as an intern.
-
-**6. Internship Policies / Benefits**  
-The company provides an internship allowance and offers flexible working hours when needed. In addition, having the opportunity to join internal training sessions is a big plus.
-
----
-
-### Additional Questions
-- What did you find **most satisfying** during your internship?  
-- What do you think the company **should improve** for future interns?  
-- If recommending to a friend, would you **suggest they intern here**? Why or why not?  
-
----
-
-### Suggestions & Expectations
-- Do you have any suggestions to improve the internship experience?  
-- Would you like to continue this program in the future?  
-- Any other comments (free sharing):
+### Areas for Improvement
+- Enhance discipline, adhering more strictly to the time and progress targets set for each study week.
+- Improve problem-solving mindset, especially the ability to independently analyze and handle errors that arise when deploying systems on AWS.
+- Further practice communication skills, presenting ideas, and reporting work more coherently, both in daily exchanges and when handling unexpected situations.

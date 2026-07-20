@@ -6,28 +6,32 @@ chapter: false
 pre: " <b> 5. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+## Triển khai Hệ Thống Quản Lý Cho Thuê Văn Phòng On Cloud trên AWS
 
+### Tổng quan
 
-# Đảm bảo truy cập Hybrid an toàn đến S3 bằng cách sử dụng VPC endpoint
+**Hệ Thống Quản Lý Cho Thuê Văn Phòng On Cloud** à một ứng dụng web phục vụ ba nhóm người dùng - Tenant (khách thuê), Admin (quản trị) và Technician (kỹ thuật viên) - được xây dựng theo kiến trúc Multi-tier kết hợp Serverless trên nền tảng AWS tại khu vực ap-southeast-1 (Singapore). Workshop này hướng dẫn bạn triển khai toàn bộ hệ thống từ hạ tầng mạng, bảo mật, frontend, backend, cơ sở dữ liệu cho đến các dịch vụ serverless, giám sát và CI/CD, theo đúng kiến trúc tham chiếu đã được thiết kế.
 
-#### Tổng quan
+Hệ thống được thiết kế đảm bảo tính sẵn sàng cao (High Availability) trên 2 vùng sẵn sàng (Availability Zones), sử dụng Amazon EC2 trong Auto Scaling Group đứng sau Application Load Balancer cho tầng ứng dụng, Amazon RDS MySQL Multi-AZ và Amazon ElastiCache for Redis cho tầng dữ liệu. Các nghiệp vụ đặc thù như thanh toán (Payments) và xử lý tài liệu được tách thành vi dịch vụ chạy trên AWS Lambda và Amazon API Gateway, giúp tối ưu hiệu suất xử lý và tiết kiệm chi phí tính toán so với mô hình chạy thường trực.
 
-**AWS PrivateLink** cung cấp kết nối riêng tư đến các dịch vụ aws từ VPCs hoặc trung tâm dữ liệu (on-premise) mà không làm lộ lưu lượng truy cập ra ngoài public internet.
++ **Về bảo mật**, hệ thống sử dụng Amazon Cognito để xác thực và cấp quyền người dùng, AWS WAF kết hợp Amazon CloudFront để bảo vệ tầng biên, AWS Certificate Manager (ACM) và Amazon Route 53 để quản lý tên miền và chứng chỉ SSL/TLS, cùng AWS Secrets Manager để bảo vệ các thông tin nhạy cảm như mật khẩu cơ sở dữ liệu. Toàn bộ workload backend được đặt trong Private Subnets, chỉ có thể ra Internet một chiều qua NAT Gateway.
 
-Trong bài lab này, chúng ta sẽ học cách tạo, cấu hình, và kiểm tra VPC endpoints để cho phép workload của bạn tiếp cận các dịch vụ AWS mà không cần đi qua Internet công cộng.
++ **Về vận hành** , hệ thống áp dụng quy trình CI/CD tự động từ GitHub thông qua AWS CodePipeline, AWS CodeBuild và AWS CodeDeploy với chiến lược Blue/Green Deployment để triển khai không gián đoạn dịch vụ. Amazon CloudWatch và Amazon SNS đảm nhiệm giám sát và cảnh báo, trong khi AWS Budgets, AWS Cost Explorer, Savings Plans, S3 Intelligent-Tiering và VPC Endpoints được sử dụng để tối ưu chi phí vận hành hàng tháng.
 
-Chúng ta sẽ tạo hai loại endpoints để truy cập đến Amazon S3: gateway vpc endpoint và interface vpc endpoint. Hai loại vpc endpoints này mang đến nhiều lợi ích tùy thuộc vào việc bạn truy cập đến S3 từ môi trường cloud hay từ trung tâm dữ liệu (on-premise).
-+ **Gateway** - Tạo gateway endpoint để gửi lưu lượng đến Amazon S3 hoặc DynamoDB using private IP addresses. Bạn điều hướng lưu lượng từ VPC của bạn đến gateway endpoint bằng các bảng định tuyến (route tables)
-+ **Interface** - Tạo interface endpoint để gửi lưu lượng đến các dịch vụ điểm cuối (endpoints) sử dụng Network Load Balancer để phân phối lưu lượng. Lưu lượng dành cho dịch vụ điểm cuối được resolved bằng DNS.
+Kết thúc workshop, bạn sẽ có khả năng tự thiết kế và triển khai một hệ thống web ba tầng (three-tier) có tính sẵn sàng cao, bảo mật theo chuẩn AWS Well-Architected Framework, mở rộng bằng Auto Scaling và Serverless, đồng thời vận hành với quy trình CI/CD và giám sát chi phí hoàn chỉnh.
 
 #### Nội dung
 
 1. [Tổng quan về workshop](5.1-Workshop-overview/)
-2. [Chuẩn bị](5.2-Prerequiste/)
-3. [Truy cập đến S3 từ VPC](5.3-S3-vpc/)
-4. [Truy cập đến S3 từ TTDL On-premises](5.4-S3-onprem/)
-5. [VPC Endpoint Policies (làm thêm)](5.5-Policy/)
-6. [Dọn dẹp tài nguyên](5.6-Cleanup/)
+2. [Điều kiện tiên quyết](5.2-Prerequistes/)
+3. [Tạo mạng AWS](5.3-Creat-AWS-Network/)
+4. [Cấu hình bảo mật](5.4-Security-Configuration/)
+5. [Triển khai giao diện người dùng](5.5-User-Interface-Presentation/)
+6. [Triển khai máy chủ](5.6-Deploying-Servers/)
+7. [Triển khai máy chủ phụ trợ](5.7-Deploying-Server-Support/)
+8. [Triển khai cơ sở dữ liệu](5.8-Data-Declaration-Base/)
+9. [Xây dựng dịch vụ Serverless](5.9-Building-Serverless-Services/)
+10. [Quản lý bí mật](5.10-Secret-Management/)
+11. [Giám sát](5.11-Monitoring/)
+12. [Tối ưu hóa chi phí](5.12-Cost-Optimization/)
+13. [Dọn dẹp](5.13-Cleanup/)

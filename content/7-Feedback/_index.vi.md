@@ -5,40 +5,32 @@ weight: 7
 chapter: false
 pre: " <b> 7. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+## Tự đánh giá
 
->Tại đây bạn có thể tự do đóng góp ý kiến cá nhân về những trải nghiệm khi tham gia chương trình First Cloud AI Journey, giúp team FCAJ cải thiện những vấn đề còn thiếu sót dựa trên các hạng mục sau:
+Trong suốt 12 tuần tham gia chương trình thực tập **AWS First Cloud Journey (FCJ) – Cloud Engineer** tại TP. Hồ Chí Minh, mình đã có cơ hội học hỏi, rèn luyện và áp dụng những kiến thức được trang bị ở trường vào các bài lab và dự án thực tế trên nền tảng AWS.
 
-### Đánh giá chung
+Mình đã tham gia đầy đủ lộ trình học từ nền tảng AWS, Networking, Compute, Storage, Database, Data Lake/Data Warehouse, Security, đến Architecting on AWS, đồng thời thực hiện một dự án Cloud Engineer thực tế trong 2 tuần cuối. Qua quá trình này, mình đã cải thiện được các kỹ năng như: triển khai và quản lý hạ tầng trên AWS, viết tài liệu/báo cáo kỹ thuật, tự nghiên cứu tài liệu tiếng Anh, và làm việc, trao đổi trong một cộng đồng học tập.
 
-**1. Môi trường làm việc**  
-Môi trường làm việc rất thân thiện và cởi mở. Các thành viên trong FCAJ luôn sẵn sàng hỗ trợ khi mình gặp khó khăn, kể cả ngoài giờ làm việc. Không gian làm việc gọn gàng, thoải mái, giúp mình tập trung tốt hơn. Tuy nhiên, mình nghĩ có thể bổ sung thêm một số buổi giao lưu hoặc team bonding để mọi người hiểu nhau hơn.
+Về tác phong, mình luôn cố gắng hoàn thành các bài tập và tiến độ theo tuần đúng hạn, chủ động đặt câu hỏi khi gặp khó khăn, và tích cực trao đổi với mentor cũng như các bạn học viên khác trong nhóm để nâng cao hiệu quả học tập.
 
-**2. Sự hỗ trợ của mentor / team admin**  
-Mentor hướng dẫn rất chi tiết, giải thích rõ ràng khi mình chưa hiểu và luôn khuyến khích mình đặt câu hỏi. Team admin hỗ trợ các thủ tục, tài liệu và tạo điều kiện để mình làm việc thuận lợi. Mình đánh giá cao việc mentor cho phép mình thử và tự xử lý vấn đề thay vì chỉ đưa đáp án.
+Để phản ánh một cách khách quan quá trình thực tập, mình xin tự đánh giá bản thân dựa trên các tiêu chí dưới đây:
 
-**3. Sự phù hợp giữa công việc và chuyên ngành học**  
-Công việc mình được giao phù hợp với kiến thức mình đã học ở trường, đồng thời mở rộng thêm những mảng mới mà mình chưa từng được tiếp cận. Nhờ vậy, mình vừa củng cố kiến thức nền tảng, vừa học thêm kỹ năng thực tế.
+| STT | Tiêu chí | Mô tả | Tốt | Khá | Trung bình |
+|---|---|---|:---:|:---:|:---:|
+| 1 | Kiến thức và kỹ năng chuyên môn | Hiểu biết về AWS, khả năng áp dụng kiến thức vào bài lab thực tế, kỹ năng sử dụng công cụ, chất lượng sản phẩm/bài tập | ✅ | ☐ | ☐ |
+| 2 | Khả năng học hỏi | Tiếp thu kiến thức mới về các dịch vụ AWS, học hỏi nhanh qua tài liệu và lab | ☐ | ✅ | ☐ |
+| 3 | Chủ động | Tự tìm hiểu tài liệu, chủ động đăng ký và hoàn thành lab mà không chờ nhắc nhở | ✅ | ☐ | ☐ |
+| 4 | Tinh thần trách nhiệm | Hoàn thành nội dung học tập theo đúng tiến độ từng tuần, đảm bảo chất lượng bài nộp | ✅ | ☐ | ☐ |
+| 5 | Kỷ luật | Tuân thủ lịch học, deadline nộp bài và các quy định của chương trình | ☐ | ☐ | ✅ |
+| 6 | Tính cầu tiến | Sẵn sàng tiếp nhận góp ý từ mentor và điều chỉnh, cải thiện bài làm | ☐ | ✅ | ☐ |
+| 7 | Giao tiếp | Trình bày worklog, báo cáo tiến độ và trao đổi vấn đề kỹ thuật rõ ràng | ☐ | ✅ | ☐ |
+| 8 | Hợp tác nhóm | Tham gia thảo luận, hỗ trợ các bạn học viên khác trong cộng đồng AWS Study Group | ✅ | ☐ | ☐ |
+| 9 | Ứng xử chuyên nghiệp | Tôn trọng mentor, ban tổ chức và các thành viên khác trong chương trình | ✅ | ☐ | ☐ |
+| 10 | Tư duy giải quyết vấn đề | Nhận diện lỗi/vấn đề khi làm lab, tìm hướng khắc phục và đề xuất giải pháp | ☐ | ✅ | ☐ |
+| 11 | Đóng góp vào dự án/tổ chức | Hiệu quả thực hiện dự án Cloud Engineer thực tế, đóng góp bài viết/workshop cho cộng đồng | ✅ | ☐ | ☐ |
+| 12 | Tổng thể | Đánh giá chung về toàn bộ quá trình thực tập tại chương trình FCJ | ✅ | ☐ | ☐ |
 
-**4. Cơ hội học hỏi & phát triển kỹ năng**  
-Trong quá trình thực tập, mình học được nhiều kỹ năng mới như sử dụng công cụ quản lý dự án, kỹ năng làm việc nhóm, và cả cách giao tiếp chuyên nghiệp trong môi trường công ty. Mentor cũng chia sẻ nhiều kinh nghiệm thực tế giúp mình định hướng tốt hơn cho sự nghiệp.
-
-**5. Văn hóa & tinh thần đồng đội**  
-Văn hóa công ty rất tích cực: mọi người tôn trọng lẫn nhau, làm việc nghiêm túc nhưng vẫn vui vẻ. Khi có dự án gấp, mọi người cùng nhau cố gắng, hỗ trợ không phân biệt vị trí. Điều này giúp mình cảm thấy mình là một phần của tập thể, dù chỉ là thực tập sinh.
-
-**6. Chính sách / phúc lợi cho thực tập sinh**  
-Công ty có hỗ trợ phụ cấp thực tập và tạo điều kiện về thời gian linh hoạt khi cần thiết. Ngoài ra, việc được tham gia các buổi đào tạo nội bộ là một điểm cộng lớn.
-
-
-### Một số câu hỏi khác
-- Điều bạn **hài lòng nhất** trong thời gian thực tập?  
-- Điều bạn nghĩ công ty **cần cải thiện** cho các thực tập sinh sau?  
-- Nếu giới thiệu cho bạn bè, bạn có **khuyên họ thực tập ở đây không**? Vì sao?  
-
-
-### Đề xuất & mong muốn
-- Bạn có đề xuất gì để cải thiện trải nghiệm trong kỳ thực tập?  
-- Bạn có muốn tiếp tục chương trình này trong tương lai?
-- Góp ý khác (tự do chia sẻ):
+### Cần cải thiện
+- Nâng cao tính kỷ luật, tuân thủ nghiêm chỉnh hơn về thời gian và tiến độ đã đặt ra cho từng tuần học.
+- Cải thiện tư duy giải quyết vấn đề, đặc biệt là khả năng phân tích và xử lý các lỗi phát sinh khi triển khai hệ thống trên AWS một cách độc lập hơn.
+- Rèn luyện thêm kỹ năng giao tiếp, trình bày ý tưởng và báo cáo công việc mạch lạc hơn, cả trong trao đổi hằng ngày lẫn khi xử lý tình huống phát sinh.
