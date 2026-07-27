@@ -1,6 +1,11 @@
 ---
+<<<<<<< HEAD
 title: "Mermaid"
 description: "Generation of diagram and flowchart from text in a similar manner as markdown"
+=======
+title : "Mermaid"
+description : "Generation of diagram and flowchart from text in a similar manner as markdown"
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf
 ---
 
 [Mermaid](https://mermaidjs.github.io/) is a library helping you to generate diagram and flowcharts from text, in a similar manner as Markdown.
@@ -11,16 +16,24 @@ Just insert your mermaid code in the `mermaid` shortcode and that's it.
 
     {{</*mermaid align="left"*/>}}
     graph LR;
+<<<<<<< HEAD
     	A[Hard edge] -->|Link text| B(Round edge)
     	B --> C{Decision}
     	C -->|One| D[Result one]
     	C -->|Two| E[Result two]
+=======
+        A[Hard edge] -->|Link text| B(Round edge)
+        B --> C{Decision}
+        C -->|One| D[Result one]
+        C -->|Two| E[Result two]
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf
     {{</* /mermaid */>}}
 
 renders as
 
 {{<mermaid align="left">}}
 graph LR;
+<<<<<<< HEAD
 A[Hard edge] -->|Link text| B(Round edge)
 B --> C{Decision}
 C -->|One| D[Result one]
@@ -52,6 +65,17 @@ graph LR;
 ## Sequence example
 
     {{</*mermaid*/>}}
+=======
+    A[Hard edge] -->|Link text| B(Round edge)
+    B --> C{Decision}
+    C -->|One| D[Result one]
+    C -->|Two| E[Result two]
+{{</mermaid>}}
+
+## Sequence example
+
+    {{</* mermaid */>}}
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf
     sequenceDiagram
         participant Alice
         participant Bob
@@ -69,6 +93,7 @@ renders as
 
 {{<mermaid>}}
 sequenceDiagram
+<<<<<<< HEAD
 participant Alice
 participant Bob
 Alice->>John: Hello John, how are you?
@@ -86,6 +111,8 @@ or you can use this alternative syntax:
 <pre>
 ```mermaid
 sequenceDiagram
+=======
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf
     participant Alice
     participant Bob
     Alice->>John: Hello John, how are you?
@@ -96,6 +123,7 @@ sequenceDiagram
     John-->Alice: Great!
     John->Bob: How about you?
     Bob-->John: Jolly good!
+<<<<<<< HEAD
 ```
 </pre>
 
@@ -118,6 +146,13 @@ sequenceDiagram
 ## GANTT Example
 
     {{</*mermaid*/>}}
+=======
+{{</mermaid>}}
+
+## GANTT Example
+
+    {{</* mermaid */>}}
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf
     gantt
             dateFormat  YYYY-MM-DD
             title Adding GANTT diagram functionality to mermaid
@@ -135,10 +170,15 @@ sequenceDiagram
             Add to mermaid                      :1d
     {{</* /mermaid */>}}
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf
 renders as
 
 {{<mermaid>}}
 gantt
+<<<<<<< HEAD
 dateFormat YYYY-MM-DD
 title Adding GANTT diagram functionality to mermaid
 section A section
@@ -221,6 +261,48 @@ classDiagram
 renders as
 
 ```mermaid
+=======
+        dateFormat  YYYY-MM-DD
+        title Adding GANTT diagram functionality to mermaid
+        section A section
+        Completed task            :done,    des1, 2014-01-06,2014-01-08
+        Active task               :active,  des2, 2014-01-09, 3d
+        Future task               :         des3, after des2, 5d
+        Future task2               :         des4, after des3, 5d
+        section Critical tasks
+        Completed task in the critical line :crit, done, 2014-01-06,24h
+        Implement parser and jison          :crit, done, after des1, 2d
+        Create tests for parser             :crit, active, 3d
+        Future task in critical line        :crit, 5d
+        Create tests for renderer           :2d
+        Add to mermaid                      :1d
+{{</mermaid>}}
+
+
+### Class example
+
+    {{</* mermaid */>}}
+    classDiagram
+      Class01 <|-- AveryLongClass : Cool
+      Class03 *-- Class04
+      Class05 o-- Class06
+      Class07 .. Class08
+      Class09 --> C2 : Where am i?
+      Class09 --* C3
+      Class09 --|> Class07
+      Class07 : equals()
+      Class07 : Object[] elementData
+      Class01 : size()
+      Class01 : int chimp
+      Class01 : int gorilla
+      Class08 <--> C2: Cool label
+    {{</* /mermaid */>}}
+
+renders as
+
+
+{{<mermaid>}}
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf
 classDiagram
   Class01 <|-- AveryLongClass : Cool
   Class03 *-- Class04
@@ -235,6 +317,7 @@ classDiagram
   Class01 : int chimp
   Class01 : int gorilla
   Class08 <--> C2: Cool label
+<<<<<<< HEAD
 ```
 
 ### Git example
@@ -263,6 +346,35 @@ end
 renders as
 
 ```mermaid
+=======
+{{</mermaid>}}
+
+
+### Git example
+
+    {{</* mermaid */>}}
+    gitGraph:
+    options
+    {
+      "nodeSpacing": 150,
+      "nodeRadius": 10
+    }
+    end
+      commit
+      branch newbranch
+      checkout newbranch
+      commit
+      commit
+      checkout master
+      commit
+      commit
+      merge newbranch
+    {{</* /mermaid*/>}}
+
+renders as
+
+{{<mermaid>}}
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf
 gitGraph:
 options
 {
@@ -279,4 +391,34 @@ end
   commit
   commit
   merge newbranch
+<<<<<<< HEAD
 ```
+=======
+{{</mermaid>}}
+
+### State Diagrams
+
+    {{</* mermaid */>}}
+    stateDiagram-v2
+      open: Open Door
+      closed: Closed Door
+      locked: Locked Door
+      open   --> closed: Close
+      closed --> locked: Lock
+      locked --> closed: Unlock
+      closed --> open: Open
+    {{</* /mermaid */>}}
+
+renders as
+
+{{<mermaid>}}
+stateDiagram-v2
+  open: Open Door
+  closed: Closed Door
+  locked: Locked Door
+  open   --> closed: Close
+  closed --> locked: Lock
+  locked --> closed: Unlock
+  closed --> open: Open
+{{</mermaid>}}
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf

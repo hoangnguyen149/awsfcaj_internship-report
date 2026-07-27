@@ -9,7 +9,11 @@ Hugo utilise Markdown pour son format simple. Cependant, il y a beaucoup de chos
 
 Mais c'est probablement une mauvaise idée. Tout le monde utilise le Markdown parce que c'est pur et simple à lire même lorsqu'il est affiché en texte brut. Vous devez éviter le HTML autant que possible pour garder le contenu simple.
 
+<<<<<<< HEAD
 Cependant, pour éviter les limitations, Hugo a créé les [shortcodes](https://gohugo.io/extras/shortcodes/). Un shortcode est un bout de code (_snippet_) dans une page.
+=======
+Cependant, pour éviter les limitations, Hugo a créé les [shortcodes](https://gohugo.io/extras/shortcodes/). Un shortcode est un bout de code (*snippet*) dans une page.
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf
 
 **Hugo-theme-learn** fournit de multiple shortcodes en plus de ceux existant.
 

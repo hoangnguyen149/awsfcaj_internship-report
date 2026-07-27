@@ -21,6 +21,13 @@ This theme's repository is: https://github.com/matcornic/hugo-theme-learn.git
 
 Alternatively, you can [download the theme as .zip](https://github.com/matcornic/hugo-theme-learn/archive/master.zip) file and extract it in the `themes` directory
 
+<<<<<<< HEAD
+=======
+{{% notice note %}}
+Google Analytics are added to `/layout/partials/custom-footer.html` remove the contents of that file to opt-out.
+{{% /notice %}}
+
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf
 ## Basic configuration
 
 When building the website, you can set a theme by using `--theme` option. However, we suggest you modify the configuration file (`config.toml`) and set the theme as the default. You can also add the `[outputs]` section to enable the search functionality.
@@ -46,7 +53,11 @@ Chapters are pages that contain other child pages. It has a special layout style
 Discover what this Hugo theme is all about and the core concepts behind it.
 ```
 
+<<<<<<< HEAD
 renders as
+=======
+renders as 
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf
 
 ![A Chapter](/en/basics/installation/images/chapter.png?classes=shadow&width=60pc)
 
@@ -69,7 +80,11 @@ hugo new basics/first-content.md
 hugo new basics/second-content/_index.md
 ```
 
+<<<<<<< HEAD
 Feel free to edit thoses files by adding some sample content and replacing the `title` value in the beginning of the files.
+=======
+Feel free to edit thoses files by adding some sample content and replacing the `title` value in the beginning of the files. 
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf
 
 ## Launching the website locally
 

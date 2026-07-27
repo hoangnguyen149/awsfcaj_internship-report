@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 dataSource: "prs"
 prefix: "v"
 onlyMilestones: false
@@ -23,3 +24,29 @@ groupBy:
     - "meta"
   Uncategorised:
     - "closed"
+=======
+  dataSource: "prs"
+  prefix: "v"
+  onlyMilestones: false
+  changelogFilename: "CHANGELOG.md"
+  includeMessages: "all"
+  ignoreIssuesWith:
+    - "support"
+  ignoreLabels:
+    - "duplicate"
+    - "invalid"
+    - "wontfix"
+  groupBy:
+    New features:
+      - "feature"
+    Bug Fixes:
+      - "bug"
+    Enhancements:
+      - "enhancement"
+    Internationalisation:
+      - "i18n"
+    Theme Meta:
+      - "meta"
+    Uncategorised:
+      - "closed"
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf

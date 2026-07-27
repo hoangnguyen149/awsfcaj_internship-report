@@ -1,3 +1,13 @@
+<<<<<<< HEAD
 {{- $paramName := (.Get 0) -}} {{- $siteParams := .Site.Params -}} {{- with
 $paramName -}} {{- with $siteParams -}} {{- index . (lower $paramName) -}} {{-
 end -}} {{- end -}}
+=======
+{{- $paramName := (.Get 0) -}}
+{{- $siteParams := .Site.Params -}}
+{{- with $paramName -}}
+    {{- with $siteParams -}}
+        {{- index . (lower $paramName) -}}
+    {{- end -}}
+{{- end -}}
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf

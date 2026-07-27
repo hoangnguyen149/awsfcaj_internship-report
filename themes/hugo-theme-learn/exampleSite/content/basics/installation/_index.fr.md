@@ -36,7 +36,11 @@ home = [ "HTML", "RSS", "JSON"]
 
 ## Créer votre première page chapitre
 
+<<<<<<< HEAD
 Les _chapitres_ sont des pages contenant d'autre pages filles. Elles ont un affichage spécial et contiennent habituellement juste un _nom_ de chapitre, le _titre_ et un _résumé_ de la section.
+=======
+Les *chapitres* sont des pages contenant d'autre pages filles. Elles ont un affichage spécial et contiennent habituellement juste un _nom_ de chapitre, le _titre_ et un _résumé_ de la section.
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf
 
 ```
 ### Chapitre 1
@@ -67,7 +71,11 @@ hugo new basics/first-content.md
 hugo new basics/second-content/_index.md
 ```
 
+<<<<<<< HEAD
 N'hésitez pas à éditer ces fichiers en ajoutant des exemple de contenu et en remplaçant le paramètre `title` au début du fichier.
+=======
+N'hésitez pas à éditer ces fichiers en ajoutant des exemple de contenu et en remplaçant le paramètre `title` au début du fichier. 
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf
 
 ## Lancer le site localement
 
@@ -97,4 +105,8 @@ Un dossier `public` a été généré. Il contient tout le contenu statique et l
 
 {{% notice note %}}
 Ce site peut être automatiquement publié et hébergé avec [Netlify](https://www.netlify.com/) ([Plus d'infos](https://www.netlify.com/blog/2015/07/30/hosting-hugo-on-netlifyinsanely-fast-deploys/)). Sinon, vous pouvez utiliser les [Github pages](https://gohugo.io/hosting-and-deployment/hosting-on-github/)
+<<<<<<< HEAD
 {{% /notice %}}
+=======
+{{% /notice %}}
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf

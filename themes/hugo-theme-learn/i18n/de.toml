@@ -23,4 +23,17 @@ other = "Bearbeite diese Seite"
 other = "Mehr"
 
 [Expand-title]
+<<<<<<< HEAD
 other = "Erweitere mich..."
+=======
+other = "Erweitere mich..."
+
+[Byte-symbol]
+other = "B"
+
+[Kilobyte-symbol]
+other = "KB"
+
+[Megabyte-symbol]
+other = "MB"
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf

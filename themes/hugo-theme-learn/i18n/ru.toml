@@ -23,4 +23,17 @@ other = "Редактировать"
 other = "Еще"
 
 [Expand-title]
+<<<<<<< HEAD
 other = "Развернуть..."
+=======
+other = "Развернуть..."
+
+[Byte-symbol]
+other = "Б"
+
+[Kilobyte-symbol]
+other = "КБ"
+
+[Megabyte-symbol]
+other = "МБ"
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf

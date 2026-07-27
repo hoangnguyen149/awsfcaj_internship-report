@@ -8,7 +8,11 @@ weight: 30
 
 Il fournit :
 
+<<<<<<< HEAD
 - Des _translation strings_ pour les valeurs par défaut utilisées par le thème (Anglais et Français). N'hésitez pas à contribuer !
+=======
+- Des *translation strings* pour les valeurs par défaut utilisées par le thème (Anglais et Français). N'hésitez pas à contribuer !
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf
 - Génération automatique du menu avec le contenu multi-langue
 - Modification de la langue dans le navigateur
 
@@ -38,6 +42,7 @@ weight = 2
 languageName = "Français"
 ```
 
+<<<<<<< HEAD
 Puis, pour chaque nouvelle page, ajoutez _l'id_ de la langue du fichier.
 
 - Le fichier `my-page.md` est découpé en deux fichiers :
@@ -46,6 +51,16 @@ Puis, pour chaque nouvelle page, ajoutez _l'id_ de la langue du fichier.
 - Le fichier `_index.md` est découpé en deux fichiers :
   - en anglais: `_index.en.md`
   - en français: `_index.fr.md`
+=======
+Puis, pour chaque nouvelle page, ajoutez *l'id* de la langue du fichier.
+
+- Le fichier `my-page.md` est découpé en deux fichiers :
+    - en anglais : `my-page.en.md`
+    - en français : `my-page.fr.md`
+- Le fichier `_index.md` est découpé en deux fichiers :
+    - en anglais: `_index.en.md`
+    - en français: `_index.fr.md`
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf
 
 {{% notice info %}}
 Attention, seulement les pages traduites sont affichées dans le menu. Le contenu n'est pas remplacé par les pages de la langue par défaut.
@@ -55,6 +70,7 @@ Attention, seulement les pages traduites sont affichées dans le menu. Le conten
 Utilisez le paramètre du Front Matter [slug](https://gohugo.io/content-management/multilingual/#translate-your-content) pour traduire également les URLs.
 {{% /notice %}}
 
+<<<<<<< HEAD
 ## Surcharger les _translation strings_
 
 Les _Translations strings_ sont utilisées comme valeurs par défaut dans le thème (Bouton _Modifier la page_, Element de subsitution _Recherche_, etc.). Les traductions sont disponibles en français et en anglais mais vous pouvez utiliser n'importe quelle autre langue et surcharger avec vos propres valeurs.
@@ -66,6 +82,19 @@ D'ailleurs, ces traductions pour servir à tout le monde, donc svp prenez le tem
 ## Désactiver le changement de langue
 
 Vous pouvez changer de langue directement dans le navigateur. C'est une super fonctionnalité, mais vous avez peut-être besoin de la désactiver.
+=======
+## Surcharger les *translation strings*
+
+Les *Translations strings* sont utilisées comme valeurs par défaut dans le thème (Bouton *Modifier la page*, Element de subsitution *Recherche*, etc.). Les traductions sont disponibles en français et en anglais mais vous pouvez utiliser n'importe quelle autre langue et surcharger avec vos propres valeurs.
+
+Pour surcharger ces valeurs, créer un nouveau fichier dans votre dossier i18n local `i18n/<idlanguage>.toml` et inspirez vous du thème `themes/hugo-theme-learn/i18n/en.toml` 
+
+D'ailleurs, ces traductions pour servir à tout le monde, donc svp prenez le temps de [proposer une Pull Request](https://github.com/matcornic/hugo-theme-learn/pulls) ! 
+
+## Désactiver le changement de langue
+
+Vous pouvez changer de langue directement dans le navigateur. C'est une super fonctionnalité, mais vous avez peut-être besoin de la désactiver. 
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf
 
 Pour ce faire, ajouter le paramètre `disableLanguageSwitchingButton=true` dans votre `config.toml`
 
@@ -75,4 +104,8 @@ Pour ce faire, ajouter le paramètre `disableLanguageSwitchingButton=true` dans 
   disableLanguageSwitchingButton = true
 ```
 
+<<<<<<< HEAD
 ![I18n menu](/en/cont/i18n/images/i18n-menu.gif)
+=======
+![I18n menu](/en/cont/i18n/images/i18n-menu.gif)
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf

@@ -8,10 +8,17 @@ Dans **Hugo**, les pages sont le cœur de votre site. Une fois configurées, les
 
 ## Dossiers
 
+<<<<<<< HEAD
 Organisez votre site comme n'importe quel autre [projet Hugo](https://gohugo.io/content/organization/). Typiquement, vous allez avoir un dossier _content_ avec vos pages.
 
     content
     ├── niveau-un
+=======
+Organisez votre site comme n'importe quel autre [projet Hugo](https://gohugo.io/content/organization/). Typiquement, vous allez avoir un dossier *content* avec vos pages.
+
+    content
+    ├── niveau-un 
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf
     │   ├── niveau-deux
     │   │   ├── niveau-trois
     │   │   │   ├── niveau-quatre
@@ -40,7 +47,11 @@ Le fichier `_index.md` est obligatoire dans chaque dossier, c'est en quelque sor
 
 ## Types
 
+<<<<<<< HEAD
 **Hugo-theme-learn** définit deux types de pages. _Défaut_ et _Chapitre_. Les deux sont utilisables à n'importe quel niveau du site, la seule différence est dans l'affichage.
+=======
+**Hugo-theme-learn** définit deux types de pages. *Défaut* et *Chapitre*. Les deux sont utilisables à n'importe quel niveau du site, la seule différence est dans l'affichage.
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf
 
 Un **Chapitre** affiche une page vouée à être une introduction pour un ensemble de pages filles. Habituellement, il va seulement contenir un titre et un résumé de la section.
 Vous pouvez définir n'importe quel contenu HTML comme préfixe de l'entrée du menu. Dans l'exemple ci-dessous, c'est juste un nombre mais vous pourriez utiliser une [icône](https://fortawesome.github.io/Font-Awesome/).
@@ -87,7 +98,11 @@ Une page **Défaut** est n'importe quelle autre page.
 
 ## Configuration des Front Matter
 
+<<<<<<< HEAD
 Chaque page Hugo doit définir un [Front Matter](https://gohugo.io/content/front-matter/) dans le format _yaml_, _toml_ ou _json_.
+=======
+Chaque page Hugo doit définir un [Front Matter](https://gohugo.io/content/front-matter/) dans le format *yaml*, *toml* ou *json*.
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf
 
 **Hugo-theme-learn** utilise les paramètres suivant en plus de ceux définis par Hugo:
 
@@ -104,7 +119,11 @@ post = ""
 chapter = false
 # Cache la page du menu
 hidden = false
+<<<<<<< HEAD
 # Nom de la personne qui a modifié la page. Quand configuré, sera affiché dans le pied de page.
+=======
+# Nom de la personne qui a modifié la page. Quand configuré, sera affiché dans le pied de page. 
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf
 LastModifierDisplayName = ""
 # Email de la personne qui a modifié la page. Quand configuré, sera affiché dans le pied de page.
 LastModifierEmail = ""
@@ -141,6 +160,11 @@ weight = 5
 
 Pour configurer votre page d'accueil, vous avez trois choix:
 
+<<<<<<< HEAD
 1. Créer une page `_index.md` dans le dossier `content` et remplissez le fichier avec du _contenu Markdown_
 2. Créer une page `index.html` dans le dossier `static` et remplissez le fichier avec du _contenu HTML_
+=======
+1. Créer une page `_index.md` dans le dossier `content` et remplissez le fichier avec du *contenu Markdown*
+2. Créer une page `index.html` dans le dossier `static` et remplissez le fichier avec du *contenu HTML*
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf
 3. Configurez votre serveur pour automatiquement rediriger la page d'accueil vers l'une de vos pages.

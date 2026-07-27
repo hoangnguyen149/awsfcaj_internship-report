@@ -23,4 +23,17 @@ other = "Modifier la page"
 other = "Aller plus loin"
 
 [Expand-title]
+<<<<<<< HEAD
 other = "Déroulez-moi..."
+=======
+other = "Déroulez-moi..."
+
+[Byte-symbol]
+other = "o"
+
+[Kilobyte-symbol]
+other = "ko"
+
+[Megabyte-symbol]
+other = "Mo"
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf

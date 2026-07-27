@@ -4,7 +4,11 @@
 	{{ .Content }}
 {{end}}
 
+<<<<<<< HEAD
 {{ if or (eq .Kind "taxonomy") (eq .Kind "taxonomyTerm") }}
+=======
+{{ if or (eq .Kind "taxonomy") (eq .Kind "term") }}
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf
 <ul>
 	{{ range .Pages }}
 		<li><a href="{{.RelPermalink}}">{{.Title}}</a></li>

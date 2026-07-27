@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+=======
+THIS PROJECT IS DEPRECATED
+
+The project is not maintained anymore. Thanks everyone for helping me on building this theme at the time where there were no good Hugo theme for documentation. 
+
+[Consider migrating to another theme](https://github.com/matcornic/hugo-theme-learn/issues/557) such as [Relearn](https://github.com/McShelby/hugo-theme-relearn) which seems to be a good maintained alternative.
+
+----
+
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf
 # Hugo Learn Theme
 
 This repository contains a theme for [Hugo](https://gohugo.io/), based on great [Grav Learn Theme](https://learn.getgrav.org/).

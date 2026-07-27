@@ -5,10 +5,17 @@
 [build.environment]
   HUGO_THEME = "repo"
   HUGO_THEMESDIR = "/opt/build"
+<<<<<<< HEAD
   HUGO_VERSION = "0.66.0"
 
 [context.production.environment]
   HUGO_BASEURL = "https://learn.netlify.com/"
+=======
+  HUGO_VERSION = "0.72.0"
+
+[context.production.environment]
+  HUGO_BASEURL = "https://learn.netlify.app/"
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf
 
 [context.deploy-preview]
   command = "hugo -s exampleSite -b $DEPLOY_PRIME_URL"

@@ -24,3 +24,15 @@ other = "更に"
 
 [Expand-title]
 other = "開く..."
+<<<<<<< HEAD
+=======
+
+[Byte-symbol]
+other = "B"
+
+[Kilobyte-symbol]
+other = "KB"
+
+[Megabyte-symbol]
+other = "MB"
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf

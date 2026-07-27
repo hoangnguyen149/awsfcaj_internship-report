@@ -12,7 +12,11 @@ Edit the website configuration `config.toml` and add a `[[menu.shortcuts]]` entr
 
 Example from the current website:
 
+<<<<<<< HEAD
     [[menu.shortcuts]]
+=======
+    [[menu.shortcuts]] 
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf
     name = "<i class='fab fa-github'></i> Github repo"
     identifier = "ds"
     url = "https://github.com/matcornic/hugo-theme-learn"
@@ -34,8 +38,13 @@ Example from the current website:
     url = "/credits"
     weight = 30
 
+<<<<<<< HEAD
 By default, shortcuts are preceded by a title. This title can be disabled by setting `disableShortcutsTitle=true`.
 However, if you want to keep the title but change its value, it can be overriden by changing your local i18n translation string configuration.
+=======
+By default, shortcuts are preceded by a title. This title can be disabled by setting `disableShortcutsTitle=true`. 
+However, if you want to keep the title but change its value, it can be overriden by changing your local i18n translation string configuration. 
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf
 
 For example, in your local `i18n/en.toml` file, add the following content
 
@@ -46,7 +55,12 @@ Read more about [hugo menu](https://gohugo.io/extras/menus/) and [hugo i18n tran
 
 ## Configuration for Multilingual mode {#i18n}
 
+<<<<<<< HEAD
 When using a multilingual website, you can set different menus for each language. In the `config.toml` file, prefix your menu configuration by `Languages.<language-id>`.
+=======
+When using a multilingual website, you can set different menus for each language. In the `config.toml` file, prefix your menu configuration by `Languages.<language-id>`. 
+
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf
 
 Example from the current website:
 
@@ -56,7 +70,11 @@ Example from the current website:
     weight = 1
     languageName = "English"
 
+<<<<<<< HEAD
     [[Languages.en.menu.shortcuts]]
+=======
+    [[Languages.en.menu.shortcuts]] 
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf
     name = "<i class='fab fa-github'></i> Github repo"
     identifier = "ds"
     url = "https://github.com/matcornic/hugo-theme-learn"
@@ -105,4 +123,8 @@ Example from the current website:
     url = "/credits"
     weight = 30
 
+<<<<<<< HEAD
 Read more about [hugo menu](https://gohugo.io/extras/menus/) and [hugo multilingual menus](https://gohugo.io/content-management/multilingual/#menus)
+=======
+Read more about [hugo menu](https://gohugo.io/extras/menus/) and [hugo multilingual menus](https://gohugo.io/content-management/multilingual/#menus)
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf

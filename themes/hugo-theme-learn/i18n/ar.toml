@@ -23,4 +23,17 @@ other = "تعديل هذه الصفحة"
 other = "المزيد"
 
 [Expand-title]
+<<<<<<< HEAD
 other = "...قم بتوسيع"
+=======
+other = "...قم بتوسيع"
+
+[Byte-symbol]
+other = "B"
+
+[Kilobyte-symbol]
+other = "KB"
+
+[Megabyte-symbol]
+other = "MB"
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf

@@ -1,1 +1,9 @@
+<<<<<<< HEAD
 public/*
+=======
+public/
+resources/
+.hugo_build.lock
+.DS_Store
+node_modules/
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf

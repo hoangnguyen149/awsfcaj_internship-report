@@ -24,3 +24,15 @@ other = "Snelkoppelingen"
 
 [Expand-title]
 other = "Lees meer..."
+<<<<<<< HEAD
+=======
+
+[Byte-symbol]
+other = "B"
+
+[Kilobyte-symbol]
+other = "KB"
+
+[Megabyte-symbol]
+other = "MB"
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf

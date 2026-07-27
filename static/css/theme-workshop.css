@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root {
   --MAIN-TEXT-color: #323235; /* Color of text by default */
   --MAIN-TITLES-TEXT-color: #778ba5; /* Color of titles h2-h3-h4-h5 */
@@ -225,4 +226,79 @@ pre {
 div.notices.info p {
   border-top: 30px solid #fd9827;
   background: #fff2db;
+=======
+/* FCJ Workshop Custom Theme */
+:root {
+  --MAIN-TEXT-color: #333333;
+  --MAIN-TITLES-TEXT-color: #FF6600;
+  --MAIN-LINK-color: #FF6600;
+  --MAIN-LINK-HOVER-color: #cc5200;
+  --MENU-HEADER-BG-color: #232F3E;
+  --MENU-HEADER-BORDER-color: #FF6600;
+  --MENU-SECTION-ACTIVE-CATEGORY-color: #FF6600;
+  --MENU-VISITED-color: #85a0ad;
+  --MENU-HOVER-BG-color: #2a3a4a;
+  --MENU-HOME-LINK-color: #ffffff;
+  --MENU-HOME-LINK-HOVER-color: #FF6600;
+  --SEARCH-RESULT-HIGHLIGHT-color: #FF6600;
+  --INTERNAL-LINK-color: #FF6600;
+  --EXTERNAL-LINK-color: #FF6600;
+  --CODE-BLOCK-BG-color: #1a1a2e;
+  --CODE-BLOCK-BORDER-color: #FF6600;
+}
+
+/* Header sidebar style */
+#header-wrapper {
+  background: var(--MENU-HEADER-BG-color) !important;
+  border-bottom: 3px solid var(--MENU-HEADER-BORDER-color);
+}
+
+/* Notice boxes */
+.notices.tip {
+  background: #e8f5e9;
+  border-left: 4px solid #4CAF50;
+}
+
+.notices.warning {
+  background: #fff3e0;
+  border-left: 4px solid #FF9800;
+}
+
+.notices.info {
+  background: #e3f2fd;
+  border-left: 4px solid #2196F3;
+}
+
+.notices.note {
+  background: #f3e5f5;
+  border-left: 4px solid #9C27B0;
+}
+
+/* Code blocks */
+pre {
+  background: var(--CODE-BLOCK-BG-color) !important;
+  border-left: 3px solid var(--CODE-BLOCK-BORDER-color);
+  border-radius: 4px;
+}
+
+/* Table styling */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table th {
+  background-color: #232F3E;
+  color: white;
+  padding: 10px;
+}
+
+table td {
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+}
+
+table tr:nth-child(even) {
+  background-color: #f5f5f5;
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf
 }

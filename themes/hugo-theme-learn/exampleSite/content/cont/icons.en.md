@@ -33,9 +33,16 @@ Built with <i class="fas fa-heart"></i> from Grav and Hugo
 
 Font Awesome provides many ways to modify the icon
 
+<<<<<<< HEAD
 - Change colour (by default the icon will inherit the parent colour)
 - Increase or decrease size
 - Rotate
 - Combine with other icons
+=======
+* Change colour (by default the icon will inherit the parent colour)
+* Increase or decrease size
+* Rotate
+* Combine with other icons
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf
 
 Check the full documentation on [web fonts with CSS](https://fontawesome.com/how-to-use/web-fonts-with-css) for more.

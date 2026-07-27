@@ -70,5 +70,6 @@ By selecting the appropriate compute and storage models, small and medium-sized 
 ![AWS Infrastructure Cost Optimization Architecture](/images/3-BlogsPosted/BLOG1.png)
 
 ...Link...
+![AWS blog link](https://www.facebook.com/share/p/19HyvGYxkK/)
 
 ...Guide...

@@ -8,7 +8,11 @@ In **Hugo**, pages are the core of your site. Once it is configured, pages are d
 
 ## Folders
 
+<<<<<<< HEAD
 Organize your site like [any other Hugo project](https://gohugo.io/content/organization/). Typically, you will have a _content_ folder with all your pages.
+=======
+Organize your site like [any other Hugo project](https://gohugo.io/content/organization/). Typically, you will have a *content* folder with all your pages.
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf
 
     content
     ├── level-one
@@ -40,7 +44,11 @@ Organize your site like [any other Hugo project](https://gohugo.io/content/organ
 
 ## Types
 
+<<<<<<< HEAD
 **Hugo-theme-learn** defines two types of pages. _Default_ and _Chapter_. Both can be used at any level of the documentation, the only difference being layout display.
+=======
+**Hugo-theme-learn** defines two types of pages. *Default* and *Chapter*. Both can be used at any level of the documentation, the only difference being layout display.
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf
 
 A **Chapter** displays a page meant to be used as introduction for a set of child pages. Commonly, it contains a simple title and a catch line to define content that can be found under it.
 You can define any HTML as prefix for the menu. In the example below, it's just a number but that could be an [icon](https://fortawesome.github.io/Font-Awesome/).
@@ -89,7 +97,11 @@ hugo new site <new_project>
 
 ## Front Matter configuration
 
+<<<<<<< HEAD
 Each Hugo page has to define a [Front Matter](https://gohugo.io/content/front-matter/) in _yaml_, _toml_ or _json_.
+=======
+Each Hugo page has to define a [Front Matter](https://gohugo.io/content/front-matter/) in *yaml*, *toml* or *json*.
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf
 
 **Hugo-theme-learn** uses the following parameters on top of Hugo ones :
 
@@ -161,6 +173,11 @@ menuTitle = "Linux"
 
 To configure your home page, you basically have three choices:
 
+<<<<<<< HEAD
 1. Create an `_index.md` document in `content` folder and fill the file with _Markdown content_
 2. Create an `index.html` file in the `static` folder and fill the file with _HTML content_
+=======
+1. Create an `_index.md` document in `content` folder and fill the file with *Markdown content*
+2. Create an `index.html` file in the `static` folder and fill the file with *HTML content*
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf
 3. Configure your server to automatically redirect home page to one your documentation page

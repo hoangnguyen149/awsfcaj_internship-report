@@ -5,26 +5,46 @@ weight: 40
 tags: ["documentation", "tutorial"]
 ---
 
+<<<<<<< HEAD
 Le _thème Learn_ supporte une des taxonomy par défaut de GoHugo : les tags.
 
 ## Configuration
 
 Il suffit d'ajouter un tableau de tags sur la page :
+=======
+
+Le *thème Learn* supporte une des taxonomy par défaut de GoHugo : les tags.
+
+## Configuration 
+
+Il suffit d'ajouter un tableau de tags sur la page  : 
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf
 
 ```markdown
 ---
 date: 2018-11-29T08:41:44+01:00
 title: Tutoriel pour le thème
 weight: 15
+<<<<<<< HEAD
 tags: ["tutoriel", "theme"]
+=======
+tags: ["tutoriel", "theme"] 
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf
 ---
 ```
 
 ## Comportement
 
+<<<<<<< HEAD
 Les tags sont affichés en haut de la page, dans l'ordre dans lequel ils ont été saisis.
 
 Chaque tag est un lien vers une page _Taxonomy_, qui affiche tous les article avec ce tag.
+=======
+Les tags sont affichés en haut de la page, dans l'ordre dans lequel ils ont été saisis. 
+
+Chaque tag est un lien vers une page *Taxonomy*, qui affiche tous les article avec ce tag.
+
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf
 
 ## Liste des tags
 
@@ -35,4 +55,8 @@ Il est possible de rajouter un raccourci dans le fichier `config.toml` afin d'af
 name = "<i class='fas fa-tags'></i> Tags"
 url = "/tags"
 weight = 30
+<<<<<<< HEAD
 ```
+=======
+```
+>>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf
