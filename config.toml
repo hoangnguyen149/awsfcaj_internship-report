@@ -3,6 +3,11 @@ relativeURLs = false
 canonifyURLs = false
 defaultContentLanguage = "en"
 
+# Leftover FCJ template samples (not part of the internship report) are excluded from the build.
+# Files stay in the repo; remove this line to publish them again.
+ignoreFiles = [ '_index_test\.md$', '/content/(1-introduce|2-prerequisite|3-content|4-cleanup)/' ]
+
+
 # Change the default theme to be use when building the site with Hugo
 theme = "hugo-theme-learn"
 
