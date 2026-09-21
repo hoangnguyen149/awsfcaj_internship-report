@@ -196,4 +196,4 @@ Verify connectivity by launching a test EC2 instance in a Private Subnet and run
 
 #### Next Step
 
-Continue to [Chapter 5.4 - Configure Security](../5.4-Security/) to configure Security Groups, NACLs, IAM, Cognito, ACM, and WAF for the system.
+Continue to [Chapter 5.4 - Configure Security](../5.4-Security-Configuration/) to configure Security Groups, NACLs, IAM, Cognito, ACM, and WAF for the system.

@@ -195,4 +195,4 @@ Kiểm tra kết nối bằng cách khởi tạo một EC2 instance thử nghi�
 
 #### Bước tiếp theo
 
-Tiếp tục sang [Chương 5.4 - Configure Security](../5.4-Security/) để cấu hình Security Group, NACL, IAM, Cognito, ACM và WAF cho hệ thống.
+Tiếp tục sang [Chương 5.4 - Configure Security](../5.4-Security-Configuration/) để cấu hình Security Group, NACL, IAM, Cognito, ACM và WAF cho hệ thống.

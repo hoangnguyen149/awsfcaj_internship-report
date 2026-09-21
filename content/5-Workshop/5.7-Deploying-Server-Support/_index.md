@@ -199,4 +199,4 @@ aws dynamodb get-item --table-name officems-audit-logs \
 
 #### Next Step
 
-Continue to [Chapter 5.8 - Build Serverless Services](../5.8-Serverless/) to deploy the Lambda and API Gateway microservices.
+Continue to [Chapter 5.8 - Build Serverless Services](../5.8-Data-Declaration-Base/) to deploy the Lambda and API Gateway microservices.

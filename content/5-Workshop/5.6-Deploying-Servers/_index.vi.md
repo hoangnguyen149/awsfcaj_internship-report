@@ -178,4 +178,4 @@ Kết quả mong đợi: HTTP 200 trả về từ endpoint health check của Ba
 
 #### Bước tiếp theo
 
-Tiếp tục sang [Chương 5.7 - Deploy Database](../5.7-Database/) để triển khai RDS Multi-AZ, ElastiCache Redis và DynamoDB.
+Tiếp tục sang [Chương 5.7 - Deploy Database](../5.7-Deploying-Server-Support/) để triển khai RDS Multi-AZ, ElastiCache Redis và DynamoDB.

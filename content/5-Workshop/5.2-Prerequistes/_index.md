@@ -124,4 +124,4 @@ Expected result: the `aws sts get-caller-identity` command returns the correct A
 
 #### Next Step
 
-Continue to [Chapter 5.3 - Create AWS Networking](../5.3-Networking/) to build the network infrastructure for the entire system.
+Continue to [Chapter 5.3 - Create AWS Networking](../5.3-Create-AWS-Network/) to build the network infrastructure for the entire system.

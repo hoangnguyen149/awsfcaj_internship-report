@@ -190,4 +190,4 @@ Expected result: HTTP 200, with an `x-cache` header confirming the request was s
 
 #### Next Step
 
-Continue to [Chapter 5.6 - Deploy Backend](../5.6-Backend/) to deploy the Backend API on an EC2 Auto Scaling Group.
+Continue to [Chapter 5.6 - Deploy Backend](../5.6-Deploying-Servers/) to deploy the Backend API on an EC2 Auto Scaling Group.

@@ -201,4 +201,4 @@ Thử tạo tải giả lập bằng công cụ `stress` trên một EC2 instanc
 
 #### Bước tiếp theo
 
-Tiếp tục sang [Chương 5.11 - CI/CD](../5.11-CICD/) để xây dựng pipeline triển khai tự động.
+Tiếp tục sang [Chương 5.11 - CI/CD](../5.11-Monitoring/) để xây dựng pipeline triển khai tự động.

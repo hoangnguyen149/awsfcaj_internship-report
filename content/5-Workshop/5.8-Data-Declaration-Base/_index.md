@@ -220,4 +220,4 @@ Upload a test file to the documents S3 bucket and check the CloudWatch Logs for 
 
 #### Next Step
 
-Continue to [Chapter 5.9 - Secrets Management](../5.9-Secrets/) to safely manage the system's sensitive information.
+Continue to [Chapter 5.9 - Secrets Management](../5.9-Building-Serverless-Services/) to safely manage the system's sensitive information.

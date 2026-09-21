@@ -167,4 +167,4 @@ Kết quả mong đợi: không tìm thấy giá trị mật khẩu thực tế 
 
 #### Bước tiếp theo
 
-Tiếp tục sang [Chương 5.10 - Monitoring](../5.10-Monitoring/) để thiết lập giám sát toàn diện với CloudWatch và SNS.
+Tiếp tục sang [Chương 5.10 - Monitoring](../5.10-Secret-Management/) để thiết lập giám sát toàn diện với CloudWatch và SNS.

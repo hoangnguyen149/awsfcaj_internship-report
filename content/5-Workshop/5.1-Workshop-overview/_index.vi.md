@@ -77,4 +77,4 @@ Workshop được chia thành 13 chương, đi theo trình tự triển khai th�
 
 #### Bước tiếp theo
 
-Tiếp tục sang [Chương 5.2 - Prerequisites](../5.2-Prerequisites/) để chuẩn bị tài khoản AWS, công cụ CLI và các thông tin cần thiết trước khi bắt đầu triển khai.
+Tiếp tục sang [Chương 5.2 - Prerequisites](../5.2-Prerequistes/) để chuẩn bị tài khoản AWS, công cụ CLI và các thông tin cần thiết trước khi bắt đầu triển khai.

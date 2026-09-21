@@ -253,4 +253,4 @@ aws wafv2 create-web-acl \
 
 #### Next Step
 
-Continue to [Chapter 5.5 - Deploy Frontend](../5.5-Frontend/) to deploy the React interface on Amazon S3 and distribute it through CloudFront.
+Continue to [Chapter 5.5 - Deploy Frontend](../5.5-User-Interface-Presentation/) to deploy the React interface on Amazon S3 and distribute it through CloudFront.

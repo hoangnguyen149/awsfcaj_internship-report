@@ -24,7 +24,7 @@ Kết thúc workshop, bạn sẽ có khả năng tự thiết kế và triển k
 
 1. [Tổng quan về workshop](5.1-Workshop-overview/)
 2. [Điều kiện tiên quyết](5.2-Prerequistes/)
-3. [Tạo mạng AWS](5.3-Creat-AWS-Network/)
+3. [Tạo mạng AWS](5.3-Create-AWS-Network/)
 4. [Cấu hình bảo mật](5.4-Security-Configuration/)
 5. [Triển khai giao diện người dùng](5.5-User-Interface-Presentation/)
 6. [Triển khai máy chủ](5.6-Deploying-Servers/)

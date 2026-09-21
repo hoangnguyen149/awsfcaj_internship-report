@@ -179,4 +179,4 @@ Expected result: HTTP 200 returned from the Backend's health check endpoint.
 
 #### Next Step
 
-Continue to [Chapter 5.7 - Deploy Database](../5.7-Database/) to deploy RDS Multi-AZ, ElastiCache Redis, and DynamoDB.
+Continue to [Chapter 5.7 - Deploy Database](../5.7-Deploying-Server-Support/) to deploy RDS Multi-AZ, ElastiCache Redis, and DynamoDB.

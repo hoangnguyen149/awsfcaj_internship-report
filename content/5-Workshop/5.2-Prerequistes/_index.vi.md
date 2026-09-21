@@ -124,4 +124,4 @@ Kết quả mong đợi: lệnh `aws sts get-caller-identity` trả về đúng 
 
 #### Bước tiếp theo
 
-Tiếp tục sang [Chương 5.3 - Create AWS Networking](../5.3-Networking/) để xây dựng hạ tầng mạng VPC cho toàn bộ hệ thống.
+Tiếp tục sang [Chương 5.3 - Create AWS Networking](../5.3-Create-AWS-Network/) để xây dựng hạ tầng mạng VPC cho toàn bộ hệ thống.

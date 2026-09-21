@@ -167,4 +167,4 @@ Expected result: no actual password value is found hardcoded anywhere.
 
 #### Next Step
 
-Continue to [Chapter 5.10 - Monitoring](../5.10-Monitoring/) to set up comprehensive monitoring with CloudWatch and SNS.
+Continue to [Chapter 5.10 - Monitoring](../5.10-Secret-Management/) to set up comprehensive monitoring with CloudWatch and SNS.

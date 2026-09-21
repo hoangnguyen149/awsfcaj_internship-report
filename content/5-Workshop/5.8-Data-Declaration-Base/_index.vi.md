@@ -220,4 +220,4 @@ Upload thử một file vào S3 bucket documents và kiểm tra CloudWatch Logs 
 
 #### Bước tiếp theo
 
-Tiếp tục sang [Chương 5.9 - Secrets Management](../5.9-Secrets/) để quản lý an toàn các thông tin nhạy cảm của hệ thống.
+Tiếp tục sang [Chương 5.9 - Secrets Management](../5.9-Building-Serverless-Services/) để quản lý an toàn các thông tin nhạy cảm của hệ thống.

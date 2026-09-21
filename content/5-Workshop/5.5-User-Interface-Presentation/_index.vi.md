@@ -189,4 +189,4 @@ Kết quả mong đợi: HTTP 200, header `x-cache` xác nhận request được
 
 #### Bước tiếp theo
 
-Tiếp tục sang [Chương 5.6 - Deploy Backend](../5.6-Backend/) để triển khai Backend API trên EC2 Auto Scaling Group.
+Tiếp tục sang [Chương 5.6 - Deploy Backend](../5.6-Deploying-Servers/) để triển khai Backend API trên EC2 Auto Scaling Group.

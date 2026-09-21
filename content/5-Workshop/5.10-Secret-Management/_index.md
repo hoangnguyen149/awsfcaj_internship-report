@@ -201,4 +201,4 @@ Try generating simulated load using the `stress` tool on an EC2 instance to chec
 
 #### Next Step
 
-Continue to [Chapter 5.11 - CI/CD](../5.11-CICD/) to build the automated deployment pipeline.
+Continue to [Chapter 5.11 - CI/CD](../5.11-Monitoring/) to build the automated deployment pipeline.

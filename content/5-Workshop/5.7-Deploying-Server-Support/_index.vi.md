@@ -199,4 +199,4 @@ aws dynamodb get-item --table-name officems-audit-logs \
 
 #### Bước tiếp theo
 
-Tiếp tục sang [Chương 5.8 - Build Serverless Services](../5.8-Serverless/) để triển khai các vi dịch vụ Lambda và API Gateway.
+Tiếp tục sang [Chương 5.8 - Build Serverless Services](../5.8-Data-Declaration-Base/) để triển khai các vi dịch vụ Lambda và API Gateway.

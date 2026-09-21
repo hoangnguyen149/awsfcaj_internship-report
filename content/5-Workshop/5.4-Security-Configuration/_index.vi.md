@@ -252,4 +252,4 @@ aws wafv2 create-web-acl \
 
 #### Bước tiếp theo
 
-Tiếp tục sang [Chương 5.5 - Deploy Frontend](../5.5-Frontend/) để triển khai giao diện React lên Amazon S3 và phân phối qua CloudFront.
+Tiếp tục sang [Chương 5.5 - Deploy Frontend](../5.5-User-Interface-Presentation/) để triển khai giao diện React lên Amazon S3 và phân phối qua CloudFront.

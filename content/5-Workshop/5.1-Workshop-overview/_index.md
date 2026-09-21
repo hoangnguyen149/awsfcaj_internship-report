@@ -75,4 +75,4 @@ The workshop is organized into 13 chapters, following the actual deployment sequ
 
 #### Next Step
 
-Continue to [Chapter 5.2 - Prerequisites](../5.2-Prerequisites/) to prepare your AWS account, CLI tools, and the information required before starting the deployment.
+Continue to [Chapter 5.2 - Prerequisites](../5.2-Prerequistes/) to prepare your AWS account, CLI tools, and the information required before starting the deployment.
