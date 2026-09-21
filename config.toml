@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 baseURL = "https://hoangnguyen149.github.io/awsfcaj_internship-report/"
 relativeURLs = false
 canonifyURLs = false
@@ -26,7 +25,7 @@ home = [ "HTML", "RSS", "JSON"]
 [Languages.en]
 title = "Internship Report"
 weight = 1
-label = "English"
+languageName = "English"
 
 [[Languages.en.menu.shortcuts]]
 name = "<i class='fab fa-aws'></i> AWS Study Group - Blog"
@@ -43,7 +42,7 @@ weight = 20
 [Languages.vi]
 title = "Báo cáo thực tập"
 weight = 2
-label = "Tiếng Việt"
+languageName = "Tiếng Việt"
 
 [[Languages.vi.menu.shortcuts]]
 name = "<i class='fab fa-aws'></i> AWS Study Group - Blog"
@@ -56,63 +55,6 @@ name = "<i class='fab fa-facebook'></i> AWS Study Group - Nhóm FB"
 identifier = "AWS Study Group FB"
 url = "https://www.facebook.com/groups/awsstudygroupfcj"
 weight = 20
-=======
-baseURL = "/"
-relativeURLs = true
-canonifyURLs = false
-defaultContentLanguage = "vi"
-
-# Theme sử dụng hugo-theme-learn
-theme = "hugo-theme-learn"
-
-# Tính năng search
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
-
-[params]
-  themeVariant = "workshop"
-  editURL = ""
-  description = "FCJ Workshop Template"
-  author = "your-email@example.com"
-  showVisitedLinks = true
-  disableBreadcrumb = false
-  disableNextPrev = false
-
-[Languages]
-  [Languages.vi]
-    title = "Chương trình AWS First Cloud Journey"
-    weight = 1
-    languageName = "Tiếng Việt"
-
-    [[Languages.vi.menu.shortcuts]]
-      name = "<i class='fab fa-aws'></i> AWS Study Group"
-      identifier = "AWS Study Group"
-      url = "https://awsstudygroup.com"
-      weight = 10
-
-    [[Languages.vi.menu.shortcuts]]
-      name = "<i class='fab fa-facebook'></i> Nhóm FB"
-      identifier = "AWS Study Group FB"
-      url = "https://www.facebook.com/groups/awsstudygroupfcj"
-      weight = 20
-
-  [Languages.en]
-    title = "AWS First Cloud Journey Program"
-    weight = 2
-    languageName = "English"
-
-    [[Languages.en.menu.shortcuts]]
-      name = "<i class='fab fa-aws'></i> AWS Study Group"
-      identifier = "AWS Study Group"
-      url = "https://awsstudygroup.com"
-      weight = 10
-
-    [[Languages.en.menu.shortcuts]]
-      name = "<i class='fab fa-facebook'></i> FB Group"
-      identifier = "AWS Study Group FB"
-      url = "https://www.facebook.com/groups/awsstudygroupfcj"
-      weight = 20
->>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf
 
 [markup]
   [markup.goldmark]

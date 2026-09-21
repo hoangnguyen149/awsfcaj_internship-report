@@ -1,22 +1,2 @@
 {{ $_hugo_config := `{ "version": 1 }` }}
-<<<<<<< HEAD
-<div
-  class="notices {{ .Get 0 }}"
-  {{
-  if
-  len
-  .Params
-  |
-  eq
-  2
-  }}
-  id="{{ .Get 1 }}"
-  {{
-  end
-  }}
->
-  {{ .Inner }}
-</div>
-=======
 <div class="notices {{ .Get 0 }}" {{ if len .Params | eq 2 }} id="{{ .Get 1 }}" {{ end }}>{{ .Inner }}</div>
->>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf

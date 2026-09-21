@@ -1,30 +1,42 @@
 ---
-title: "FCJ Workshop - Template"
-date: 2024-01-01
+title: "Internship Report"
+date: 2026-07-13
+weight: 1
 chapter: false
 ---
 
-# Workshop: [Your Workshop Name]
+# Internship Report
 
-**Author:** [Your Name]
+### Student Information:
 
----
+&emsp; **Full Name:** Nguyen Hoang Long
 
-### Overview
+&emsp; **Phone Number:** 0963960211
 
-This workshop guides you through [brief description]. You will learn:
+&emsp; **Email:** hoanglong53141@gmail.com
 
-- ✅ [Learning objective 1]
-- ✅ [Learning objective 2]
-- ✅ [Learning objective 3]
+&emsp; **University:** Ho Chi Minh City University of Technology (HUTECH)
 
-### Workshop Content
+&emsp; **Major:** Information Technology
 
-| Order | Content | Duration (min) |
-|-------|---------|----------------|
-| 1 | Introduction | 5 |
-| 2 | Prerequisites | 10 |
-| 3 | Main Content | 30 |
-| 4 | Clean Up | 5 |
+&emsp; **Class:** 22DTHE3
 
-> **Note:** AWS resources may incur charges outside the Free Tier.
+&emsp; **Internship Company:** Amazon Web Services Vietnam Company Limited
+
+&emsp; **Internship Position:** Workforce Bootcamp – First Cloud AI Journey
+
+&emsp; **Internship Duration:** From April 17, 2026 to July 13, 2026
+
+![Your Profile Picture](/images/avatar.png)
+
+
+
+### Report Contents
+
+1. [Work Log](1-Worklog/)
+2. [Proposal](2-Proposal/)
+3. [Published Blog Posts](3-BlogsPosted/)
+4. [Events Participated](4-EventParticipated/)
+5. [Workshops](5-Workshop/)
+6. [Self-Evaluation](6-Self-evaluation/)
+7. [Feedback and Suggestions](7-Feedback/)

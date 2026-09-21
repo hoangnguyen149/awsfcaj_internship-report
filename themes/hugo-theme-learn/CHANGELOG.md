@@ -1,7 +1,5 @@
 # Changelog
 
-<<<<<<< HEAD
-=======
 ## v2.5.0 (01/06/2020)
 
 #### New features
@@ -42,53 +40,35 @@
 
 ---
 
->>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf
 ## v2.4.0 (04/09/2019)
 
 #### Bug Fixes
 
 - [**bug**] correct GitHub capitalization [#293](https://github.com/matcornic/hugo-theme-learn/pull/293)
-<<<<<<< HEAD
-- [**bug**] Remove reference to the unused horsey CSS [#284](https://github.com/matcornic/hugo-theme-learn/pull/284)
-- [**bug**] Fix invalid HTML in 404 template. [#271](https://github.com/matcornic/hugo-theme-learn/pull/271)
-- [**bug**] fix 'locate' typo [#285](https://github.com/matcornic/hugo-theme-learn/pull/285)
-=======
 - [**bug**] fix 'locate' typo [#285](https://github.com/matcornic/hugo-theme-learn/pull/285)
 - [**bug**] Remove reference to the unused horsey CSS [#284](https://github.com/matcornic/hugo-theme-learn/pull/284)
 - [**bug**] Fix invalid HTML in 404 template. [#271](https://github.com/matcornic/hugo-theme-learn/pull/271)
->>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf
 
 #### Enhancements
 
 - [**enhancement**] Delete html5shiv-printshiv.min.js [#319](https://github.com/matcornic/hugo-theme-learn/pull/319)
 - [**enhancement**] remove html5shiv [#315](https://github.com/matcornic/hugo-theme-learn/pull/315)
 - [**enhancement**] Fix deprecated .Hugo, .UniqueID and .URL references [#303](https://github.com/matcornic/hugo-theme-learn/pull/303)
-<<<<<<< HEAD
-- [**enhancement**] remove unneeded type="text/css" [#297](https://github.com/matcornic/hugo-theme-learn/pull/297)
-- [**enhancement**] Fix type lines 364 and 369 [#304](https://github.com/matcornic/hugo-theme-learn/pull/304)
-- [**enhancement**] remove unneeded type="text/css" [#298](https://github.com/matcornic/hugo-theme-learn/pull/298)
-- [**enhancement**] HTTPS links in footer [#295](https://github.com/matcornic/hugo-theme-learn/pull/295)
-- [**enhancement**] remove unneeded type="text/css" [#292](https://github.com/matcornic/hugo-theme-learn/pull/292)
-=======
 - [**enhancement**] Fix type lines 364 and 369 [#304](https://github.com/matcornic/hugo-theme-learn/pull/304)
 - [**enhancement**] remove unneeded type="text/css" [#298](https://github.com/matcornic/hugo-theme-learn/pull/298)
 - [**enhancement**] remove unneeded type="text/css" [#297](https://github.com/matcornic/hugo-theme-learn/pull/297)
 - [**enhancement**] HTTPS links in footer [#295](https://github.com/matcornic/hugo-theme-learn/pull/295)
 - [**enhancement**] remove unneeded  type="text/css" [#292](https://github.com/matcornic/hugo-theme-learn/pull/292)
->>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf
 - [**enhancement**] Make shortcodes & example site compatible with Hugo v0.55 [#281](https://github.com/matcornic/hugo-theme-learn/pull/281)
 
 #### Internationalisation
 
 - [**i18n**] Added German and Arabic translation [#312](https://github.com/matcornic/hugo-theme-learn/pull/312)
 
-<<<<<<< HEAD
-=======
 #### Theme Meta
 
 - [**meta**] Added Tshark.dev as example site [#318](https://github.com/matcornic/hugo-theme-learn/pull/318)
 
->>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf
 ---
 
 ## v2.3.0 (16/04/2019)
@@ -174,11 +154,7 @@
 #### Internationalisation
 
 - [**i18n**] Clean up the English language phrasing [#146](https://github.com/matcornic/hugo-theme-learn/pull/146)
-<<<<<<< HEAD
-- [**i18n**] Updated \_index.en.md for typo "names" [#150](https://github.com/matcornic/hugo-theme-learn/pull/150)
-=======
 - [**i18n**] Updated _index.en.md for typo "names" [#150](https://github.com/matcornic/hugo-theme-learn/pull/150)
->>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf
 
 #### Theme Meta
 
@@ -191,13 +167,8 @@
 - [**closed**] Improved variant of #119, as per request [#124](https://github.com/matcornic/hugo-theme-learn/pull/124)
 - [**closed**] role="" is invalid [#121](https://github.com/matcornic/hugo-theme-learn/pull/121)
 - [**closed**] Related to previous PR [#120](https://github.com/matcornic/hugo-theme-learn/pull/120)
-<<<<<<< HEAD
-- [**closed**] Issue #111 for \_index.fr.md [#117](https://github.com/matcornic/hugo-theme-learn/pull/117)
-- [**closed**] Issue #111 for \_index.en.md [#116](https://github.com/matcornic/hugo-theme-learn/pull/116)
-=======
 - [**closed**] Issue #111 for _index.fr.md [#117](https://github.com/matcornic/hugo-theme-learn/pull/117)
 - [**closed**] Issue #111 for _index.en.md [#116](https://github.com/matcornic/hugo-theme-learn/pull/116)
->>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf
 - [**closed**] Issue #111 for theme-green.css [#114](https://github.com/matcornic/hugo-theme-learn/pull/114)
 - [**closed**] Issue #111 for theme-red.css [#113](https://github.com/matcornic/hugo-theme-learn/pull/113)
 - [**closed**] Issue #111 for theme-blue.css [#112](https://github.com/matcornic/hugo-theme-learn/pull/112)
@@ -205,11 +176,7 @@
 - [**closed**] fix #77 : no wrap images that already wrapped [#118](https://github.com/matcornic/hugo-theme-learn/pull/118)
 - [**closed**] doc: Keep icons aligned [#110](https://github.com/matcornic/hugo-theme-learn/pull/110)
 - [**closed**] Add Portuguese translation [#109](https://github.com/matcornic/hugo-theme-learn/pull/109)
-<<<<<<< HEAD
-- [**closed**] Use `relURL` where possible [#102](https://github.com/matcornic/hugo-theme-learn/pull/102)
-=======
 - [**closed**] Use `relURL`  where possible [#102](https://github.com/matcornic/hugo-theme-learn/pull/102)
->>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf
 - [**closed**] Bug fix in sidebar menu and children description generation [#105](https://github.com/matcornic/hugo-theme-learn/pull/105)
 - [**closed**] fix some typo [#104](https://github.com/matcornic/hugo-theme-learn/pull/104)
 - [**closed**] Added a `menuTitle` attribute to partials/menu.html [#90](https://github.com/matcornic/hugo-theme-learn/pull/90)
@@ -237,15 +204,9 @@
 
 #### Uncategorised
 
-<<<<<<< HEAD
-- [**closed**] feat: Change the default code color [#43](https://github.com/matcornic/hugo-theme-learn/pull/43)
-- [**closed**] Use index pages + automatic navigation arrows [#36](https://github.com/matcornic/hugo-theme-learn/pull/36)
-- [**closed**] Fix anchor scrolling that hides behind top nav bar [#46](https://github.com/matcornic/hugo-theme-learn/pull/46)
-=======
 - [**closed**] Fix anchor scrolling that hides behind top nav bar [#46](https://github.com/matcornic/hugo-theme-learn/pull/46)
 - [**closed**] feat: Change the default code color [#43](https://github.com/matcornic/hugo-theme-learn/pull/43)
 - [**closed**] Use index pages + automatic navigation arrows [#36](https://github.com/matcornic/hugo-theme-learn/pull/36)
->>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf
 
 ---
 
@@ -253,10 +214,7 @@
 
 #### Uncategorised
 
-<<<<<<< HEAD
-=======
 - [**closed**] Search [#18](https://github.com/matcornic/hugo-theme-learn/pull/18)
->>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf
 - [**closed**] Extracted menu footer content to separate partial file [#35](https://github.com/matcornic/hugo-theme-learn/pull/35)
 - [**closed**] feat: style Hugo figure shortcode [#33](https://github.com/matcornic/hugo-theme-learn/pull/33)
 - [**closed**] Fix URL for 'Edit this page' on Windows [#27](https://github.com/matcornic/hugo-theme-learn/pull/27)
@@ -266,7 +224,3 @@
 - [**closed**] Menu generation using Content file instead directories [#5](https://github.com/matcornic/hugo-theme-learn/pull/5)
 - [**closed**] Add Checkmark On visited Links [#4](https://github.com/matcornic/hugo-theme-learn/pull/4)
 - [**closed**] doc: Add theme installation instructions [#1](https://github.com/matcornic/hugo-theme-learn/pull/1)
-<<<<<<< HEAD
-- [**closed**] Search [#18](https://github.com/matcornic/hugo-theme-learn/pull/18)
-=======
->>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf

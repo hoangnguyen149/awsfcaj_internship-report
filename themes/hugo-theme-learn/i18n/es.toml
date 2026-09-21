@@ -24,8 +24,6 @@ other = "Más"
 
 [Expand-title]
 other = "Expandir..."
-<<<<<<< HEAD
-=======
 
 [Byte-symbol]
 other = "B"
@@ -35,4 +33,3 @@ other = "KB"
 
 [Megabyte-symbol]
 other = "MB"
->>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf

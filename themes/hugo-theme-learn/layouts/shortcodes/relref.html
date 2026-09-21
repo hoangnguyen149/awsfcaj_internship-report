@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-{{- if in (.Get 0) "/_index.md" -}} {{- $paths := (split (.Get 0) "_index.md")
--}} {{- $pagepath := index $paths 0 -}} {{- $anchor := index $paths 1 -}} {{-
-with .Site.GetPage "section" (trim $pagepath "/") -}} {{- ( printf "%s%s"
-$pagepath $anchor ) | relLangURL -}} {{- end -}} {{- else -}} {{- with
-.Site.GetPage "section" (.Get 0) }} {{- .RelPermalink -}} {{- else -}} {{- .Get
-0 | relref .Page -}} {{- end -}} {{- end -}}
-=======
 {{- if in (.Get 0) "/_index.md" -}}
 	{{- $paths := (split (.Get 0) "_index.md") -}}
 	{{- $pagepath := index $paths 0 -}}
@@ -20,4 +12,3 @@ $pagepath $anchor ) | relLangURL -}} {{- end -}} {{- else -}} {{- with
 		{{- .Get 0 | relref .Page -}}
 	{{- end -}}
 {{- end -}}
->>>>>>> 14f00160fe1a8798112c92f40478f57213880ddf
