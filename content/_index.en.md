@@ -11,7 +11,6 @@ chapter: false
 
 &emsp; **Full Name:** Nguyen Hoang Long
 
-&emsp; **Phone Number:** 0963960211
 
 &emsp; **Email:** hoanglong53141@gmail.com
 

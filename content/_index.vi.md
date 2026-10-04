@@ -9,7 +9,6 @@ chapter: false
 ### Thông tin sinh viên:
 &emsp; **Họ và tên:** Nguyễn Hoàng long
 
-&emsp; **Số điện thoại:** 0963960211
 
 &emsp; **Email:** hoanglong53141@gmail.com
 
